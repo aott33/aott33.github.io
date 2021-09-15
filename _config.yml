@@ -1,1 +1,25 @@
 theme: jekyll-theme-slate
+title: "IIoT Training - Learn in Public"
+author: "Andrew Ott"
+description: "I am on a path to become an IIoT Expert and want to share what I am learning to the public. Shoutout to SHAWN @SWYX WANG (https://www.swyx.io/about/) and his challenge to #LearnInPublic (https://www.swyx.io/learn-in-public/)"
+
+rss: rss
+
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+    
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+titles_from_headings:
+  strip_title: true
+  collections: true
+
+defaults:
+  - scope:
+      path: ""
+      type: post
+    values:
+      tags: Other
