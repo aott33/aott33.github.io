@@ -1,3 +1,5 @@
+/* from https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html */
+
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -7,7 +9,6 @@ hr {
 .post_navi {
   display: flex;
 }
-/* from https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html */
 
 .post_navi-label {
   font-size: 0.8em;
