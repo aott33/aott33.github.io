@@ -15,6 +15,7 @@
 - Lenze PLC
 - Lenze VFD
 - Temperature Probe
+- M12 Cordset for Temperature Probe
 - Ignition 
 
 ### Steps:
