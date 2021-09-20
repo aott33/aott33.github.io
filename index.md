@@ -1,4 +1,4 @@
-Goal of this blog
+## Goal of this blog
 ---
 {{site.description}}
 
