@@ -13,7 +13,7 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{- site.description -}}</p>
+        <p>{{- site.description | escape  -}}</p>
         <ul class="contact-list">
           {%- if site.email -%}
           <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
