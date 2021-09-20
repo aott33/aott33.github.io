@@ -7,7 +7,6 @@
 - Send VFD setpoints via Ignition
 - Display VFD data, parameters, and alarms in Ignition
 - Create a small structured text program to set the correct frequency based on the temperature
-- 
 
 ### Materials Needed:
 - Lenze PLC
