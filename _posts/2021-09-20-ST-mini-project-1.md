@@ -1,4 +1,4 @@
-## IN PROGRESS - Structured Text (wiring, PLC configuration, and IIoT) Mini-Project 
+## IN PROGRESS - IIoT Mini Project 1
 
 ### Mini Project Goal:
 - Connect a Lenze VFD to a Lenze PLC using Ethernet/IP
