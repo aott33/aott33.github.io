@@ -9,7 +9,7 @@
   - [Opto 22 - Publishing to MQTT](http://documents.opto22.com/2235_OptoTutorial_Publishing_to_MQTT.pdf)
   - [Node-RED - Subflows Guide](https://nodered.org/docs/user-guide/editor/workspace/subflows)
   - [Node-RED - Subflows Video](https://www.youtube.com/watch?v=zdDdBG_zuLU)
-  - [Node-Red - Admin API Methods](https://nodered.org/docs/api/admin/methods/)
+  - [Node-RED - Admin API Methods](https://nodered.org/docs/api/admin/methods/)
 
 
 ### Learn in Public:
