@@ -7,7 +7,7 @@
   #### Node-RED:
   - [Opto 22 - Node-RED Tutorials](https://youtube.com/playlist?list=PLKYvTRORAnx6a9tETvF95o35mykuysuOw)
   - [Opto 22 - Publishing to MQTT](http://documents.opto22.com/2235_OptoTutorial_Publishing_to_MQTT.pdf)
-  - [Node-RED - Subflows](https://nodered.org/docs/user-guide/editor/workspace/subflows)
+  - [Node-RED - Subflows Guide](https://nodered.org/docs/user-guide/editor/workspace/subflows)
   - [Node-RED - Subflows Video](https://www.youtube.com/watch?v=zdDdBG_zuLU)
 
 
