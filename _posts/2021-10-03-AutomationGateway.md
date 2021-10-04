@@ -7,9 +7,11 @@ Prior to this weekend, I had very little experience working with APIs. So, testi
 ## Steps taken:
 * Go to [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and review the documentation 
 * Pull the [Docker image](https://hub.docker.com/r/rocworks/automation-gateway)
+
 ```
 docker pull rocworks/automation-gateway
 ```
+
 Note: I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 
 * Create a `config.yaml` file and add the needed configurations
@@ -53,9 +55,11 @@ OpcUaClient:
 
 * Open Docker Desktop 
 * Open Command Prompt and type the following docker run command 
+
 ```
 docker run -p 4000:4000 -p 1883:1883 -v 'Enter file path here'\config.yaml:/app/config.yaml rocworks/automation-gateway
 ```
+
 Note: I learned that the `%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows)
 
 
