@@ -7,6 +7,7 @@ Prior to this weekend, I had very little experience working with APIs. So, testi
 
 ## Steps taken:
 - Go to [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and review the documentation
+
   ![image](https://user-images.githubusercontent.com/48938478/135791378-29be6fc7-66e0-4bfb-8017-845259785fed.png)
   
 - Pull the [Docker image](https://hub.docker.com/r/rocworks/automation-gateway)
