@@ -11,6 +11,17 @@
   - [Node-RED - Subflows Video](https://www.youtube.com/watch?v=zdDdBG_zuLU)
   - [Node-RED - Admin API Methods](https://nodered.org/docs/api/admin/methods/)
 
+  ### OPC UA to MQTT
+  - [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway)
+  - [Rocworks - OPC UA to MQTT Demo](https://www.youtube.com/watch?v=3sw-6zmcNAQ)
+  - [Rocworks - OPC UA to GraphQL Demo](https://www.youtube.com/watch?v=QGAoshjhHDc)
+
+  ### API
+  - [freeCodeCamp - What is an API](https://youtu.be/GZvSYJDk-us)
+  - [freeCodeCamp - Webhooks for Beginners](https://youtu.be/GZvSYJDk-us)
+  - [How to GraphQL](https://www.howtographql.com/)
+  - [freeCodeCamp - GraphQL Full Course](https://youtu.be/ed8SzALpx1Q)
+
 
 ### Learn in Public:
 - [Learn in Public](https://www.swyx.io/learn-in-public/)
