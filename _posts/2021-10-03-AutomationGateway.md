@@ -8,5 +8,6 @@ Prior to this weekend, I had very little experience working with APIs. So, testi
 ## Steps taken:
 - Go to [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and review the documentation 
 - Pull the [Docker image](https://hub.docker.com/r/rocworks/automation-gateway)
+  `docker pull rocworks/automation-gateway`
   - Note: Ensure that you have docker installed. I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 -  
