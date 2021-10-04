@@ -14,6 +14,6 @@ Note: I am using the [Docker Desktop for Windows](https://docs.docker.com/deskto
 
 3. Create a `config.yaml` file
 4. See the [rocworks/automation-gateway docker page](https://hub.docker.com/r/rocworks/automation-gateway) for an example:
-  ..* I added the following to my `config.yaml` file
+  1. I added the following to my `config.yaml` file
 
 
