@@ -15,7 +15,7 @@ Note: I am using the [Docker Desktop for Windows](https://docs.docker.com/deskto
 * Create a `config.yaml` file and add the needed configurations
   * See the [rocworks/automation-gateway docker page](https://hub.docker.com/r/rocworks/automation-gateway) for an example. I added the following:
 
-```yaml
+```
 MqttServer:
   Listeners:
     - Id: Mqtt
