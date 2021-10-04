@@ -11,6 +11,7 @@ Prior to this weekend, I had very little experience working with APIs. So, testi
 docker pull rocworks/automation-gateway
 ```
   - I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
+ 
 - Create a `config.yaml` file
 - See the [rocworks/automation-gateway docker page](https://hub.docker.com/r/rocworks/automation-gateway) for an example:
 - I added the following to my `config.yaml` file
