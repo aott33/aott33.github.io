@@ -11,5 +11,5 @@ Prior to this weekend, I had very little experience working with APIs. So, testi
 
   `docker pull rocworks/automation-gateway`
 
-  - Note: Ensure that you have docker installed. I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
+  Note: Ensure that you have docker installed. I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 -  
