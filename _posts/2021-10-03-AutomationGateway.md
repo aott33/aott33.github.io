@@ -32,7 +32,7 @@ OpcUaClient:
   - Id: "opc1"
     Enabled: true
     LogLevel: INFO
-    EndpointUrl: "opc.tcp://plcServer:4840"
+    EndpointUrl: "opc.tcp://IPaddress:4840"
     UpdateEndpointUrl: true
     SecurityPolicyUri: http://opcfoundation.org/UA/SecurityPolicy#None
     ConnectTimeout: 5000
@@ -49,3 +49,9 @@ OpcUaClient:
       DiscardOldest: true
       DataChangeTrigger: StatusValue # Status | StatusValue | StatusValueTimestamp
 ```
+* Open Docker Desktop 
+* Open Command Prompt and type the following docker run command 
+```
+docker run -p 4000:4000 -p 1883:1883 -v 'Enter file path here'\config.yaml:/app/config.yaml rocworks/automation-gateway
+```
+  * (I learned that the `%PWD` in the example on the Docker Hub page will not work in Windows Command Prompt. Perhaps most people would have known that.)
