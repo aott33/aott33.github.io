@@ -54,4 +54,4 @@ OpcUaClient:
 ```
 docker run -p 4000:4000 -p 1883:1883 -v 'Enter file path here'\config.yaml:/app/config.yaml rocworks/automation-gateway
 ```
-  * (I learned that the `%PWD` in the example on the Docker Hub page will not work in Windows Command Prompt. Perhaps most people would have known that.)
+Note: I learned that the `%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work in Command Prompt. Perhaps most people would have known that.
