@@ -16,7 +16,7 @@
   - [Rocworks - OPC UA to MQTT Demo](https://www.youtube.com/watch?v=3sw-6zmcNAQ)
   - [Rocworks - OPC UA to GraphQL Demo](https://www.youtube.com/watch?v=QGAoshjhHDc)
 
-  ### API
+  ### APIs
   - [freeCodeCamp - What is an API](https://youtu.be/GZvSYJDk-us)
   - [freeCodeCamp - Webhooks for Beginners](https://youtu.be/41NOoEz3Tzc)
   - [freeCodeCamp - GraphQL Full Course](https://youtu.be/ed8SzALpx1Q)
