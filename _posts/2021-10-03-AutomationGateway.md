@@ -14,8 +14,8 @@ docker pull rocworks/automation-gateway
 
 - Note: I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 
-* Create a `config.yaml` file and add the needed configurations
-  * See the [rocworks/automation-gateway docker page](https://hub.docker.com/r/rocworks/automation-gateway) for an example. I added the following:
+3. Create a `config.yaml` file and add the needed configurations
+  - See the [rocworks/automation-gateway docker page](https://hub.docker.com/r/rocworks/automation-gateway) for an example. I added the following:
 
 ```yaml
 MqttServer:
@@ -53,8 +53,8 @@ OpcUaClient:
       DataChangeTrigger: StatusValue # Status | StatusValue | StatusValueTimestamp
 ```
 
-3. Open Docker Desktop 
-4. Open Command Prompt and type the following docker run command 
+4. Open Docker Desktop 
+5. Open Command Prompt and type the following docker run command 
 
 ```
 docker run -p 4000:4000 -p 1883:1883 -v 'Enter file path here'\config.yaml:/app/config.yaml rocworks/automation-gateway
