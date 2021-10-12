@@ -20,7 +20,4 @@ Vaughn Turner, and others who have helped develop the mentorship program). I am 
 that is shared in the community.
 
 ### Next steps:
-Blog about what I am currently learning:
-- [PLC Controls with Structured Text (ST)](https://www.amazon.ca/Plc-Controls-Structured-Text-St/dp/8743002420)
-- [Sparkplug™ Specification](https://www.eclipse.org/tahu/spec/Sparkplug%20Topic%20Namespace%20and%20State%20ManagementV2.2-with%20appendix%20B%20format%20-%20Eclipse.pdf)
-- [OPC UA – Unified Architecture: The Everyman’s Guide to OPC UA](https://www.rtautomation.com/product/opc-ua-unified-architecture-the-everymans-guide-to-opc-ua/)
+Blog about what I am learning.
