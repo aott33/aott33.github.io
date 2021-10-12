@@ -5,14 +5,14 @@ Several months ago I found the [Frankenstein Automation Gateway](https://github.
 Prior to this weekend, I had very little experience working with APIs. So, implementing this gateway was a great way to learn about APIs, specifically, GraphQL. See the [Resources Page](/Resources.md#apis) for helpful API resources.
 
 ## Steps taken:
-* Go to [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and review the documentation 
-* Pull the [Docker image](https://hub.docker.com/r/rocworks/automation-gateway)
+1. Go to [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and review the documentation 
+2. Pull the [Docker image](https://hub.docker.com/r/rocworks/automation-gateway)
 
 ```
 docker pull rocworks/automation-gateway
 ```
 
-Note: I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
+- Note: I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 
 * Create a `config.yaml` file and add the needed configurations
   * See the [rocworks/automation-gateway docker page](https://hub.docker.com/r/rocworks/automation-gateway) for an example. I added the following:
@@ -53,13 +53,13 @@ OpcUaClient:
       DataChangeTrigger: StatusValue # Status | StatusValue | StatusValueTimestamp
 ```
 
-* Open Docker Desktop 
-* Open Command Prompt and type the following docker run command 
+3. Open Docker Desktop 
+4. Open Command Prompt and type the following docker run command 
 
 ```
 docker run -p 4000:4000 -p 1883:1883 -v 'Enter file path here'\config.yaml:/app/config.yaml rocworks/automation-gateway
 ```
 
-Note: I learned that the `%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows)
+- Note: I learned that the `%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows)
 
 
