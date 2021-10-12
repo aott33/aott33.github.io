@@ -1,8 +1,8 @@
 # Testing out the Frankenstein Automation Gateway
 
-Several months ago I found the [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and decided to test it out. This gateway allowed me to access data from an OPC UA server on my PLC via MQTT and GraphQL.
+Several months ago I found the [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and finally got around to testing it out. This gateway allows you to access data from an OPC UA server PLC via MQTT and GraphQL.
 
-Prior to this weekend, I had very little experience working with APIs. So, implementing this gateway was a great way to learn about APIs, specifically, GraphQL. See the [Resources Page](/Resources.md#apis) for helpful API resources.
+Prior to implementing this gateway, I had very little experience working with APIs. So, implementing this gateway was a great way to learn about APIs, specifically, GraphQL. See the [Resources Page](/Resources.md#apis) for helpful API resources.
 
 ## Steps taken:
 1. Go to [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and review the documentation 
@@ -12,7 +12,7 @@ Prior to this weekend, I had very little experience working with APIs. So, imple
 docker pull rocworks/automation-gateway
 ```
 
-- Note: I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
+  - Note: I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 
 3. Create a `config.yaml` file and add the needed configurations
   - See the [rocworks/automation-gateway docker page](https://hub.docker.com/r/rocworks/automation-gateway) for an example. I added the following:
@@ -60,6 +60,6 @@ OpcUaClient:
 docker run -p 4000:4000 -p 1883:1883 -v 'Enter file path here'\config.yaml:/app/config.yaml rocworks/automation-gateway
 ```
 
-- Note: I learned that the `%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows)
+  - Note: I learned that the `%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows)
 
-
+6. Access OPC UA data via MQTT (MQTT.fx 1.7.1 subscribe did not work for me, I changed to MQTT Explorer and it worked as it should):
