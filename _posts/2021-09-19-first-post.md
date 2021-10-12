@@ -1,10 +1,3 @@
-## First Blog Post
-
-First off, thanks to Chad Baldwin and his tutorial on [Building a Free Blog with GitHub Pages in Minutes](https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html).
-This tutorial helped me get started with setting this blog up.
-
----
-
 ### The goal of this blog:
 Help build my Industry 4.0 ["expertise, network, and second brain" by learning in public](https://www.swyx.io/learn-in-public/).
 
