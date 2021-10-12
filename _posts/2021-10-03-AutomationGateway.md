@@ -1,6 +1,6 @@
 # Testing out the Frankenstein Automation Gateway
 
-Several months ago I found the [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and finally got around to testing it out. This gateway allows you to access data from an OPC UA server PLC via MQTT and GraphQL.
+Several months ago I found the [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and finally got around to testing it out. This gateway allows you to access data from an OPC UA server via MQTT and GraphQL.
 
 Prior to implementing this gateway, I had very little experience working with APIs. So, implementing this gateway was a great way to learn about APIs, specifically, GraphQL. See the [Resources Page](/Resources.md#apis) for helpful API resources.
 
@@ -67,3 +67,6 @@ docker run -p 4000:4000 -p 1883:1883 -v 'filepath'\config.yaml:/app/config.yaml 
 
 7. Accessing OPC UA data via GraphQL:
 - Need to add images and query examples
+
+## Summary:
+- Need to write up a summary
