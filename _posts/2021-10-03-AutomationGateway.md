@@ -63,7 +63,8 @@ docker run -p 4000:4000 -p 1883:1883 -v 'filepath'\config.yaml:/app/config.yaml 
   - Note: I learned that the `%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows)
 
 6. Accessing OPC UA data via MQTT (MQTT.fx 1.7.1 subscribe did not work for me, I changed to MQTT Explorer and it worked as it should):
-  - Need to add images and topic name examples
+  - See MQTT topic examples from [vogler75's github page](https://github.com/vogler75/automation-gateway#example-topics)
+  - Initially, I had a hard time determining the topic path. I found it very helpful to use [UaExpert](https://www.unified-automation.com/downloads/opc-ua-clients.html) to determine the correct NodeID
 
 7. Accessing OPC UA data via GraphQL:
   - Need to add images and query examples
