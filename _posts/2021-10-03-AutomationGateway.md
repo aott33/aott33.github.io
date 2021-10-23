@@ -62,12 +62,9 @@ docker run -p 4000:4000 -p 1883:1883 -v 'filepath'\config.yaml:/app/config.yaml 
   - Initially, I had a hard time determining the topic path. I found it very helpful to use [UaExpert](https://www.unified-automation.com/downloads/opc-ua-clients.html) to determine the correct NodeID
   1. I browsed to the data point that I wanted to access via MQTT:
   ![image](https://user-images.githubusercontent.com/48938478/138560344-276bec60-8600-493f-852f-674d9affc82a.png)
-  
   2. I copied the nodeid:
   ![image](https://user-images.githubusercontent.com/48938478/138560375-af96ef61-bc35-415f-8f7f-96402d9d92be.png)
-  
   3. Paste the copied nodeid into the MQTT topic name:
-
 7. Accessing OPC UA data via GraphQL:
   - Need to add images and query examples
 
