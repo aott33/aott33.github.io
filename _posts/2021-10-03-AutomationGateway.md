@@ -63,10 +63,10 @@ docker run -p 4000:4000 -p 1883:1883 -v 'filepath'\config.yaml:/app/config.yaml 
   - Note: I learned that the `%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows)
 
 6. Accessing OPC UA data via MQTT (MQTT.fx 1.7.1 subscribe did not work for me, I changed to MQTT Explorer and it worked as it should):
-- Need to add images and topic name examples
+  - Need to add images and topic name examples
 
 7. Accessing OPC UA data via GraphQL:
-- Need to add images and query examples
+  - Need to add images and query examples
 
 ## Summary:
-- Need to write up a summary
+  - Need to write up a summary
