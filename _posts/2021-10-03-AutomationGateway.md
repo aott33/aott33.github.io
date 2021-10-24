@@ -60,7 +60,7 @@ OpcUaClient:
 ### 4. Open Docker Desktop 
 ### 5. Open command prompt and call the docker run command 
 - Ensure that you have navigated to the folder where you saved the config.yaml file
-- ***`%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows), use %cd% instead***
+- ***`%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows), use `%cd%` instead***
 
 ```
 docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocworks/automation-gateway
