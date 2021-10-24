@@ -102,7 +102,7 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
       Port: 4000
       LogLevel: INFO
       GraphiQL: true 
-```
+    ```
 
   - The Documentation Explorer is a helpful resource for determining how to access the data via GraphQL
   - Below is an example Query:
