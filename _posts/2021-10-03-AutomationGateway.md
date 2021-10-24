@@ -66,7 +66,6 @@ OpcUaClient:
 docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocworks/automation-gateway
 ```
 
-  - Note: I learned that the `%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows)
 ### 6. Accessing OPC UA data via MQTT (MQTT.fx 1.7.1 subscribe did not work for me, I changed to MQTT Explorer and it worked as it should):
   - See MQTT example topics from [vogler75's github page](https://github.com/vogler75/automation-gateway#example-topics)
     - Using nodeid to get the value of the node
