@@ -78,11 +78,11 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
 - Initially, I had a hard time determining the topic path. I found it very helpful to use [UaExpert](https://www.unified-automation.com/downloads/opc-ua-clients.html) to determine the correct NodeID
   #### 1. Browse to the data point:
   
-  ![image](https://user-images.githubusercontent.com/48938478/138560344-276bec60-8600-493f-852f-674d9affc82a.png)
+  <kbd> <img src= "https://user-images.githubusercontent.com/48938478/138560344-276bec60-8600-493f-852f-674d9affc82a.png" /> </kbd>
   
   #### 2. Copy the nodeid:
   
-  ![image](https://user-images.githubusercontent.com/48938478/138560375-af96ef61-bc35-415f-8f7f-96402d9d92be.png)
+  <kbd> <img src= "https://user-images.githubusercontent.com/48938478/138560375-af96ef61-bc35-415f-8f7f-96402d9d92be.png" /> </kbd>
   
   `ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState`
   
