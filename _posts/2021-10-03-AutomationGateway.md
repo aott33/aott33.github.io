@@ -7,7 +7,7 @@ Prior to implementing this gateway, I had very little experience working with AP
 
 ## Steps taken:
 ### 1. Go to [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and review the documentation 
-### 2. Go to Docker Hub and pull the [Docker image](https://hub.docker.com/r/rocworks/automation-gateway)
+### 2. Go to [rocworks Docker Hub](https://hub.docker.com/r/rocworks/automation-gateway) to copy the pull command or copy below
 
 ```
 docker pull rocworks/automation-gateway
