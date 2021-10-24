@@ -53,7 +53,8 @@ OpcUaClient:
 ```
 
 ### 4. Open Docker Desktop 
-### 5. Open Command Prompt and type the following docker run command (Change 'filepath' to the filepath of the config.yaml file)
+### 5. Open Command Prompt and type the following docker run command 
+- (Change 'filepath' to the filepath of the config.yaml file)
 
 ```
 docker run -p 4000:4000 -p 1883:1883 -v 'filepath'\config.yaml:/app/config.yaml rocworks/automation-gateway
