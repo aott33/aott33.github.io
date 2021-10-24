@@ -69,8 +69,7 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
 ### 6. Accessing OPC UA data via MQTT 
 - ***MQTT.fx 1.7.1 subscribe did not work for me, I changed to MQTT Explorer and it worked***
 - See MQTT example topics from [vogler75's github page](https://github.com/vogler75/automation-gateway#example-topics)
-#### Using nodeid to get the value of the node:
-  - "type = Opc"/"id = specified in yaml.config"/node:value/"nodeid"
+- Using nodeid to get the value of the node:
   - `Opc/opc1/node:value/ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState`
 - Initially, I had a hard time determining the topic path. I found it very helpful to use [UaExpert](https://www.unified-automation.com/downloads/opc-ua-clients.html) to determine the correct NodeID
   #### 1. I browsed to the data point that I wanted to access via MQTT:
@@ -81,7 +80,8 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
   
   ![image](https://user-images.githubusercontent.com/48938478/138560375-af96ef61-bc35-415f-8f7f-96402d9d92be.png)
   
-  #### 3. Paste the copied nodeid into the MQTT topic name:
+  #### 3. Append the nodid to the following MQTT topic:
+  `Opc/opc1/node:value/`
 
 ### 7. Accessing OPC UA data via GraphQL:
   - Need to add images and query examples
