@@ -76,11 +76,11 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
 - Using nodeid to get the value of the node:
   - `Opc/opc1/node:value/ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState`
 - Initially, I had a hard time determining the topic path. I found it very helpful to use [UaExpert](https://www.unified-automation.com/downloads/opc-ua-clients.html) to determine the correct NodeID
-  #### 1. I browsed to the data point that I wanted to access via MQTT:
+  #### 1. Browse to the data point:
   
   ![image](https://user-images.githubusercontent.com/48938478/138560344-276bec60-8600-493f-852f-674d9affc82a.png)
   
-  #### 2. I copied the nodeid:
+  #### 2. Copy the nodeid:
   
   ![image](https://user-images.githubusercontent.com/48938478/138560375-af96ef61-bc35-415f-8f7f-96402d9d92be.png)
   
