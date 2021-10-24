@@ -28,4 +28,4 @@
 
 ## GitHub Pages:
 - [Building a Free Blog with GitHub Pages in Minutes](https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html)
-- [Add comments to GitHub Pages using utterancse](https://github.com/utterance/utterances)
+- [Add comments to GitHub Pages using utterances](https://github.com/utterance/utterances)
