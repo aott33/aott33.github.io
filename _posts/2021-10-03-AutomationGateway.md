@@ -106,8 +106,91 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
 
   - The Documentation Explorer is a helpful resource for determining how to access the data via GraphQL:
     <kbd> <img src= "https://user-images.githubusercontent.com/48938478/138581304-f662dfcc-79c7-4ebf-a7f6-5db3df06910f.png" /> </kbd>
-  - Below is an example Query for one NodeVale:
-  - Below is the 
+  - Below is an example Query for a single NodeValue:
+
+    ```
+    DeviceState: NodeValue(
+    Type: Opc,
+    System: "opc1",
+    NodeId: "ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState"
+    ) {
+    Value
+    }
+    ```
+    
+  - Below is the return from the single NodeValue query:
+    
+    ```
+    {
+      "data": {
+        "DeviceState": {
+          "Value": "1"
+        }
+      }
+    }
+    ```
+    
+  - Below is an example Query for multiple NodeValues:
+
+    ```
+    {
+      NodeValues(
+        Type: Opc,
+        System: "opc1",
+        NodeIds: [
+          "ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].sDeviceName",
+          "ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].rRequested_Hz",
+          "ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].rActual_Hz",
+          "ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].rMotorCurrent",
+          "ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState"
+        ]
+      ) {
+        NodeId
+        SourceTime
+        Value
+      }
+    }
+    ```
+    
+  - Below is the return from the multiple NodeValues query:
+    
+    ```
+    {
+      "data": {
+        "NodeValues": [
+          {
+            "NodeId": "ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].sDeviceName",
+            "SourceTime": "2021-10-24T05:08:57Z",
+            "Value": "VFD-1"
+          },
+          {
+            "NodeId": "ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].rRequested_Hz",
+            "SourceTime": "2021-10-24T05:08:57Z",
+            "Value": "60.0"
+          },
+          {
+            "NodeId": "ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].rActual_Hz",
+            "SourceTime": "2021-10-24T05:08:57Z",
+            "Value": "8.199995"
+          },
+          {
+            "NodeId": "ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].rMotorCurrent",
+            "SourceTime": "2021-10-24T05:08:57Z",
+            "Value": "9.8"
+          },
+          {
+            "NodeId": "ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState",
+            "SourceTime": "2021-10-24T05:08:57Z",
+            "Value": "1"
+          }
+        ]
+      }
+    }
+    ```
 
 ## Summary:
-  - Need to write up a summary
+  - Overall, I am very impressed with how easy it was to implement the Automation Gateway using Docker
+  - The developer was very accessible to assist me when I had questions
+  - This gateway helped develop my API/GraphQL skills
+  - This gateway helped me learn more about OPC UA.
+    - I needed to learn how the OPC UA address space works and how to access the data I needed
