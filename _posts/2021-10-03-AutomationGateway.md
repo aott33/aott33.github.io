@@ -11,13 +11,13 @@ Below are the steps that I took to implement the Frankenstein Automation Gateway
 ### 1. Go to [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and review the documentation
 ### 2. Install [Docker Desktop](https://docs.docker.com/desktop/)
 - I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
-### 2. Go to the [rocworks/automation-gateway Docker Page](https://hub.docker.com/r/rocworks/automation-gateway) to copy the Docker Pull Command or copy below
+### 3. Go to the [rocworks/automation-gateway Docker Page](https://hub.docker.com/r/rocworks/automation-gateway) to copy the Docker Pull Command or copy below
 
 ```
 docker pull rocworks/automation-gateway
 ```
 
-### 3. Create a `config.yaml` file and add the needed configurations
+### 4. Create a `config.yaml` file and add the needed configurations
 - See the [rocworks/automation-gateway Docker Page](https://hub.docker.com/r/rocworks/automation-gateway) for an example
 - Below is the `config.yaml` file that I created:
 
@@ -57,8 +57,8 @@ OpcUaClient:
       DataChangeTrigger: StatusValue # Status | StatusValue | StatusValueTimestamp
 ```
 
-### 4. Open Docker Desktop 
-### 5. Open command prompt and call the docker run command 
+### 5. Open Docker Desktop 
+### 6. Open command prompt and call the docker run command 
 - Ensure that you have navigated to the folder where you saved the config.yaml file
 - ***`%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows), use `%cd%` instead. See example below:***
 
@@ -66,7 +66,7 @@ OpcUaClient:
 docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocworks/automation-gateway
 ```
 
-### 6. Accessing OPC UA data via MQTT 
+### 7. Accessing OPC UA data via MQTT 
 - ***MQTT.fx 1.7.1 subscribe did not work for me, I changed to MQTT Explorer and it worked***
 - See MQTT example topics from [vogler75's github page](https://github.com/vogler75/automation-gateway#example-topics)
 - Using nodeid to get the value of the node:
@@ -85,19 +85,24 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
   #### 3. Append the nodeid to the following MQTT topic:
   `Opc/opc1/node:value/` + `ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState`
 
-### 7. Accessing OPC UA data via GraphQL:
+### 8. Accessing OPC UA data via GraphQL:
   - Similar method as accessing the OPC UA data via MQTT
   - I used [UaExpert](https://www.unified-automation.com/downloads/opc-ua-clients.html) to determine the NodeId
   - I used GraphiQL to query the GraphQL server. Accessed via the following URL:
     - `http://localhost:4000/graphiql/`
     - Esure that the `GraphQLServer` section in the `config.yaml` file has `GraphiQL: true` in. See below:
-    ```
+   
+   ```
     GraphQLServer:
       Listeners:
       Port: 4000
       LogLevel: INFO
       GraphiQL: true 
     ```
+
+  - The Documentation Explorer is a helpful resource for determining how to access the data via GraphQL
+  - Below is an example Query:
+  - Below is the 
 
 ## Summary:
   - Need to write up a summary
