@@ -24,6 +24,9 @@ defaults:
       type: post
     values:
       tags: Other
+      
+comments:
+  provider: utterances
 
 utterances:
   repo: "aott33/aott33.github.io"
