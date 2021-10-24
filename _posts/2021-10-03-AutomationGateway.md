@@ -7,7 +7,7 @@ Prior to implementing this gateway, I had very little experience working with AP
 
 ## Steps taken:
 ### 1. Go to [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and review the documentation 
-### 2. Go to [rocworks Docker Hub](https://hub.docker.com/r/rocworks/automation-gateway) to copy the Docker Pull Command or copy below
+### 2. Go to the [rocworks/automation-gateway Docker Page](https://hub.docker.com/r/rocworks/automation-gateway) to copy the Docker Pull Command or copy below
 
 ```
 docker pull rocworks/automation-gateway
@@ -15,7 +15,7 @@ docker pull rocworks/automation-gateway
 
   - Note: I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 ### 3. Create a `config.yaml` file and add the needed configurations
-  - See the [rocworks/automation-gateway docker page](https://hub.docker.com/r/rocworks/automation-gateway) for an example. I added the following:
+  - See the [rocworks/automation-gateway Docker Page](https://hub.docker.com/r/rocworks/automation-gateway) for an example. I added the following:
 
 ```
 MqttServer:
