@@ -66,7 +66,8 @@ OpcUaClient:
 docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocworks/automation-gateway
 ```
 
-### 6. Accessing OPC UA data via MQTT (MQTT.fx 1.7.1 subscribe did not work for me, I changed to MQTT Explorer and it worked as it should):
+### 6. Accessing OPC UA data via MQTT 
+- ***MQTT.fx 1.7.1 subscribe did not work for me, I changed to MQTT Explorer and it worked***
   - See MQTT example topics from [vogler75's github page](https://github.com/vogler75/automation-gateway#example-topics)
     - Using nodeid to get the value of the node
     - "type = Opc"/"id = specified in yaml.config"/node:value/"nodeid"
