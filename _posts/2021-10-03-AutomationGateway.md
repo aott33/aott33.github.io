@@ -61,7 +61,7 @@ OpcUaClient:
       DataChangeTrigger: StatusValue # Status | StatusValue | StatusValueTimestamp
 ```
 
-### 5. Open Docker Desktop 
+### 5. Run Docker Desktop 
 ### 6. Open command prompt and call the docker run command 
 - Ensure that you have navigated to the folder where you saved the config.yaml file
 - ***`%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows), use `%cd%` instead. See example below:***
