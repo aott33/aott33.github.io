@@ -59,10 +59,10 @@ OpcUaClient:
 
 ### 4. Open Docker Desktop 
 ### 5. Open Command Prompt and type the following docker run command 
-- Change 'filepath' to the filepath of the config.yaml file
+- Change filepath in square brackets to the filepath your config.yaml file
 
 ```
-docker run -p 4000:4000 -p 1883:1883 -v ***C:\Users\Public\Documents\automation-gateway\config.yaml***:/app/config.yaml rocworks/automation-gateway
+docker run -p 4000:4000 -p 1883:1883 -v [C:\Users\Public\Documents\automation-gateway\config.yaml]:/app/config.yaml rocworks/automation-gateway
 ```
 
   - Note: I learned that the `%PWD` in the [Docker Hub example](https://hub.docker.com/r/rocworks/automation-gateway) will not work on [Windows](https://docs.docker.com/desktop/windows/troubleshoot/#path-conversion-on-windows)
