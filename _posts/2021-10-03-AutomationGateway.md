@@ -80,8 +80,10 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
   
   ![image](https://user-images.githubusercontent.com/48938478/138560375-af96ef61-bc35-415f-8f7f-96402d9d92be.png)
   
+  `ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState`
+  
   #### 3. Append the nodid to the following MQTT topic:
-  `Opc/opc1/node:value/`
+  `Opc/opc1/node:value/` + `ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState`
 
 ### 7. Accessing OPC UA data via GraphQL:
   - Need to add images and query examples
