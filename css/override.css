@@ -45,3 +45,7 @@ hr {
   font-size: 2.5em;
   opacity: 0.3;
 }
+
+.utterances {
+  max-width: 100%;
+}
