@@ -18,7 +18,8 @@ docker pull rocworks/automation-gateway
 ```
 
 ### 3. Create a `config.yaml` file and add the needed configurations
-- See the [rocworks/automation-gateway Docker Page](https://hub.docker.com/r/rocworks/automation-gateway) for an example. I added the following:
+- See the [rocworks/automation-gateway Docker Page](https://hub.docker.com/r/rocworks/automation-gateway) for an example
+- Below is the `config.yaml` file that I created:
 
 ```
 MqttServer:
