@@ -34,7 +34,7 @@ OpcUaClient:
   - Id: "opc1"
     Enabled: true
     LogLevel: INFO
-    EndpointUrl: "opc.tcp://IPaddress:4840"
+    EndpointUrl: "opc.tcp://192.168.1.250:4840"
     UpdateEndpointUrl: true
     SecurityPolicyUri: http://opcfoundation.org/UA/SecurityPolicy#None
     ConnectTimeout: 5000
