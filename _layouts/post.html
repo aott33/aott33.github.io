@@ -23,10 +23,10 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+    <h1>Comments</h1>
+    {% include utterances.html %}
     {% include navlinks.html %}
   </div>
-
-  {% include utterances.html %}
   
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
