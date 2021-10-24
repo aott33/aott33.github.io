@@ -104,8 +104,8 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
       GraphiQL: true 
     ```
 
-  - The Documentation Explorer is a helpful resource for determining how to access the data via GraphQL
-    ![image](https://user-images.githubusercontent.com/48938478/138581304-f662dfcc-79c7-4ebf-a7f6-5db3df06910f.png)
+  - The Documentation Explorer is a helpful resource for determining how to access the data via GraphQL:
+    <kbd> <img src= "https://user-images.githubusercontent.com/48938478/138581304-f662dfcc-79c7-4ebf-a7f6-5db3df06910f.png" /> </kbd>
   - Below is an example Query for one NodeVale:
   - Below is the 
 
