@@ -92,11 +92,12 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
     - `http://localhost:4000/graphiql/`
     - Note: ensure that the `config.yaml` file has `GraphiQL: true` in the `GraphQLServer` section. See below:
     ```
-    - GraphQLServer:
+    GraphQLServer:
       Listeners:
-    - Port: 4000
+      Port: 4000
       LogLevel: INFO
       GraphiQL: true 
+    ```
 
 ## Summary:
   - Need to write up a summary
