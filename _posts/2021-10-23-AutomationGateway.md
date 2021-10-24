@@ -95,7 +95,7 @@ Opc/opc1/node:value/ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDevi
   #### 3. Append the nodeid to the following MQTT topic:
   
   ```
-  `Opc/opc1/node:value/` + `ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState`
+    `Opc/opc1/node:value/` + `ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState`
   ```
 
 ### 8. Accessing OPC UA data via GraphQL:
