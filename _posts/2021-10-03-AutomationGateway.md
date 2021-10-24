@@ -189,7 +189,8 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
     ```
 
 ## Summary:
-  - Overall, I am very impressed with how easy it was to implement the Automation Gateway using Docker
+  - Overall, I am very impressed how this Automation allows me to access an OPC UA Server via MQTT and GraphQL
+  - The configuration file is quite easy to setup for docker
   - The developer was very accessible to assist me when I had questions
   - This gateway helped develop my API/GraphQL skills
   - This gateway helped me learn more about OPC UA.
