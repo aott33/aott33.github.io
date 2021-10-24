@@ -24,3 +24,9 @@ defaults:
       type: post
     values:
       tags: Other
+
+utterances:
+  repo="aott33/aott33.github.io"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
