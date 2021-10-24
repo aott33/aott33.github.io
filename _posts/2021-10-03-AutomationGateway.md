@@ -9,7 +9,7 @@ Below are the steps that I took to implement the Frankenstein Automation Gateway
 
 ## Steps taken:
 ### 1. Go to [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and review the documentation
-### 2. Install Docker Desktop
+### 2. Install [Docker Desktop](https://docs.docker.com/desktop/)
 - I am using the [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 ### 2. Go to the [rocworks/automation-gateway Docker Page](https://hub.docker.com/r/rocworks/automation-gateway) to copy the Docker Pull Command or copy below
 
