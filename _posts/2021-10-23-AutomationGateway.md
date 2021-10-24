@@ -94,7 +94,7 @@ Opc/opc1/node:value/ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDevi
   
   #### 3. Append the nodeid to the following MQTT topic:
   
-  ```Opc/opc1/node:value/```
+  `Opc/opc1/node:value/`
   
   - The topic path for my exambple is below:
   
