@@ -68,7 +68,7 @@ docker run -p 4000:4000 -p 1883:1883 -v 'filepath'\config.yaml:/app/config.yaml 
     - "type = Opc"/"id = specified in yaml.config"/node:value/"nodeid"
     - `Opc/opc1/node:value/ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState`
   - Initially, I had a hard time determining the topic path. I found it very helpful to use [UaExpert](https://www.unified-automation.com/downloads/opc-ua-clients.html) to determine the correct NodeID
-  ##### 1. I browsed to the data point that I wanted to access via MQTT:
+  #### 1. I browsed to the data point that I wanted to access via MQTT:
   
   ![image](https://user-images.githubusercontent.com/48938478/138560344-276bec60-8600-493f-852f-674d9affc82a.png)
   
