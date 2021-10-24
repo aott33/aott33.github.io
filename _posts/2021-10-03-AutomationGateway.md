@@ -82,11 +82,21 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
   
   `ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState`
   
-  #### 3. Append the nodid to the following MQTT topic:
+  #### 3. Append the nodeid to the following MQTT topic:
   `Opc/opc1/node:value/` + `ns=4;s=|var|c300.Application.GVL_AutomationGateway.g_arrDeviceData[1].iDeviceState`
 
 ### 7. Accessing OPC UA data via GraphQL:
-  - Need to add images and query examples
+  - Similar method as accessing the OPC UA data via MQTT
+  - I used [UaExpert](https://www.unified-automation.com/downloads/opc-ua-clients.html) to determine the NodeId
+  - I used GraphiQL to query the GraphQL server. Accessed via the following URL:
+    - `http://localhost:4000/graphiql/`
+    - Note: ensure that the `config.yaml` file has `GraphiQL: true` in the `GraphQLServer` section. See below:
+    ```
+    - GraphQLServer:
+      Listeners:
+    - Port: 4000
+      LogLevel: INFO
+      GraphiQL: true 
 
 ## Summary:
   - Need to write up a summary
