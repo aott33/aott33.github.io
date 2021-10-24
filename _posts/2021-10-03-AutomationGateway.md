@@ -90,7 +90,7 @@ docker run -p 4000:4000 -p 1883:1883 -v %cd%\config.yaml:/app/config.yaml rocwor
   - I used [UaExpert](https://www.unified-automation.com/downloads/opc-ua-clients.html) to determine the NodeId
   - I used GraphiQL to query the GraphQL server. Accessed via the following URL:
     - `http://localhost:4000/graphiql/`
-    - Note: ensure that the `config.yaml` file has `GraphiQL: true` in the `GraphQLServer` section. See below:
+    - Esure that the `GraphQLServer` section in the `config.yaml` file has `GraphiQL: true` in. See below:
     ```
     GraphQLServer:
       Listeners:
