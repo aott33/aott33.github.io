@@ -22,6 +22,13 @@
 - [freeCodeCamp - GraphQL Full Course](https://youtu.be/ed8SzALpx1Q)
 - [How to GraphQL](https://www.howtographql.com/)
 
+## Kafka
+- [Apache Kafka in 5 minutes](https://www.youtube.com/watch?v=PzPXRmVHMxI)
+- [Apache Kafka Crash Course](https://www.youtube.com/watch?v=R873BlNVUB4&t=8s)
+- [Apache Kafka Use Cases: When To Use It & When Not To](https://www.upsolver.com/blog/apache-kafka-use-cases-when-to-use-not)
+- [Streaming IoT Data and MQTT to Kafka](https://www.hivemq.com/blog/streaming-iot-data-and-mqtt-messages-to-apache-kafka/)
+- [HiveMQ Solves the Challenge of Apache Kafka](https://www.hivemq.com/news/apache-kafka-iot-data-streams/)
+
 ## Learn in Public:
 - [Learn in Public](https://www.swyx.io/learn-in-public/)
 - [Pick up What They Put Down](https://www.swyx.io/puwtpd/)
