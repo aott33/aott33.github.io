@@ -10,6 +10,7 @@
 - [Book - Making Embedded Systems](https://www.amazon.ca/Making-Embedded-Systems-Patterns-Software-ebook/dp/B005ZTO0LG/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1636476028&sr=1-1)
 - [Controllino](https://www.controllino.com/)
 - [ProductivityOpen Controllers](https://www.automationdirect.com/adc/shopping/catalog/programmable_controllers/open_source_controllers_(arduino-compatible)/productivityopen_(arduino-compatible)#sort=undefined%20asc&start=0)
+- [Productivity Open - ACC Automation Series](https://accautomation.ca/series/productivity-open-arduino-compatible-industrial-controller/)
 - [P1AM-100 Forum](https://community.automationdirect.com/s/topic/0TO3u0000009OgnGAE/p1am100)
 - [P1AM - Facts Engineering Page](https://facts-engineering.github.io/)
 - [GitHub - P1AM - Facts Engineer](https://github.com/facts-engineering/P1AM)
