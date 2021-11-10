@@ -46,3 +46,6 @@
 - [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway)
 - [Rocworks - OPC UA to MQTT Demo](https://www.youtube.com/watch?v=3sw-6zmcNAQ)
 - [Rocworks - OPC UA to GraphQL Demo](https://www.youtube.com/watch?v=QGAoshjhHDc)
+
+## Style Guides
+- [Google Style Guides](https://google.github.io/styleguide/)
