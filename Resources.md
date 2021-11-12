@@ -16,7 +16,6 @@
 - [P1AM-100 Forum](https://community.automationdirect.com/s/topic/0TO3u0000009OgnGAE/p1am100)
 - [P1AM - Facts Engineering Page](https://facts-engineering.github.io/)
 - [GitHub - P1AM - Facts Engineer](https://github.com/facts-engineering/P1AM)
-- [Course - Programming Arduino on Industrial Environments](https://www.industrialshields.com/slides/programming-arduino-on-industrial-environments-10)
 - [embeddedartistry](https://embeddedartistry.com/)
 
 ## GitHub Pages:
