@@ -9,8 +9,8 @@
 ## Arduino/Embedded Systems
 - [Arduino Tutorial: Machine Automation with Arduino](https://www.airpair.com/arduino/posts/machine-automation-with-arduino)
 - [PlatformIO IDE - Getting Started](https://docs.platformio.org/en/latest//integration/ide/pioide.html?utm_source=platformio&utm_medium=piohome)
-- [YouTube - PlatformIO for Arduino, ESP8266, and ESP32 Tutorial](https://www.youtube.com/watch?v=0poh_2rBq7E)
-- [Book - Making Embedded Systems](https://www.amazon.ca/Making-Embedded-Systems-Patterns-Software-ebook/dp/B005ZTO0LG/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1636476028&sr=1-1)
+- [PlatformIO for Arduino, ESP8266, and ESP32 Tutorial - YouTube](https://www.youtube.com/watch?v=0poh_2rBq7E)
+- [Making Embedded Systems - Book](https://www.amazon.ca/Making-Embedded-Systems-Patterns-Software-ebook/dp/B005ZTO0LG/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1636476028&sr=1-1)
 - [Controllino](https://www.controllino.com/)
 - [ProductivityOpen Controllers](https://www.automationdirect.com/adc/shopping/catalog/programmable_controllers/open_source_controllers_(arduino-compatible)/productivityopen_(arduino-compatible)#sort=undefined%20asc&start=0)
 - [Productivity Open - ACC Automation Series](https://accautomation.ca/series/productivity-open-arduino-compatible-industrial-controller/)
