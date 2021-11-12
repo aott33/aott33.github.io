@@ -8,7 +8,7 @@
 
 ## Arduino/Embedded Systems
 - [PlatformIO IDE - Getting Started](https://docs.platformio.org/en/latest//integration/ide/pioide.html?utm_source=platformio&utm_medium=piohome)
-- [PlatformIO for Arduino, ESP8266, and ESP32 Tutorial](https://www.youtube.com/watch?v=0poh_2rBq7E)
+- [YouTube - PlatformIO for Arduino, ESP8266, and ESP32 Tutorial](https://www.youtube.com/watch?v=0poh_2rBq7E)
 - [Book - Making Embedded Systems](https://www.amazon.ca/Making-Embedded-Systems-Patterns-Software-ebook/dp/B005ZTO0LG/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1636476028&sr=1-1)
 - [Controllino](https://www.controllino.com/)
 - [ProductivityOpen Controllers](https://www.automationdirect.com/adc/shopping/catalog/programmable_controllers/open_source_controllers_(arduino-compatible)/productivityopen_(arduino-compatible)#sort=undefined%20asc&start=0)
@@ -16,6 +16,7 @@
 - [P1AM-100 Forum](https://community.automationdirect.com/s/topic/0TO3u0000009OgnGAE/p1am100)
 - [P1AM - Facts Engineering Page](https://facts-engineering.github.io/)
 - [GitHub - P1AM - Facts Engineer](https://github.com/facts-engineering/P1AM)
+- [Course - Programming Arduino on Industrial Environments](https://www.industrialshields.com/slides/programming-arduino-on-industrial-environments-10)
 - [embeddedartistry](https://embeddedartistry.com/)
 
 ## GitHub Pages:
