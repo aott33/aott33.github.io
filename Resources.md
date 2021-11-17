@@ -1,7 +1,8 @@
 # Resources
 
 <details>
-## APIs  
+ <summary>## APIs</summary>
+ 
   * [freeCodeCamp - What is an API](https://youtu.be/GZvSYJDk-us)
   * [freeCodeCamp - Webhooks for Beginners](https://youtu.be/41NOoEz3Tzc)
   * [freeCodeCamp - GraphQL Full Course](https://youtu.be/ed8SzALpx1Q)
