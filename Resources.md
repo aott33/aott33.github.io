@@ -1,7 +1,7 @@
 # Resources
 
 <details>
- <summary><strong>APIs</strong></summary>
+ <summary><strong>API Resources</strong></summary>
  
   - [freeCodeCamp - What is an API](https://youtu.be/GZvSYJDk-us)
   - [freeCodeCamp - Webhooks for Beginners](https://youtu.be/41NOoEz3Tzc)
