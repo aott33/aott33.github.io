@@ -27,6 +27,12 @@
 - [Industry 4.0 Mentorship Program](https://www.iiot.university/mentorship-program)
 - [Industry 4.0 Community Discord](https://www.iiot.university/discord)
 
+## Ignition by Inductive Automation:
+- [Modern Edge Architectures](https://jarautomation.io/blog/posts/2021-01-25-modern-edge-architectures)
+- [Public Facing Ignition](https://jarautomation.io/blog/posts/2019-06-09-public-facing-ignition/)
+- [Ignition Designer with Socks](https://jarautomation.io/blog/posts/2019-07-21-ignition-designer-with-socks/)
+- 
+
 ## Kafka
 - [Apache Kafka in 5 minutes](https://www.youtube.com/watch?v=PzPXRmVHMxI)
 - [Apache Kafka Crash Course](https://www.youtube.com/watch?v=R873BlNVUB4&t=8s)
