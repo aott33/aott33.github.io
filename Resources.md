@@ -49,6 +49,13 @@
 - [Learn in Public](https://www.swyx.io/learn-in-public/)
 - [Pick up What They Put Down](https://www.swyx.io/puwtpd/)
 
+
+<details>
+ <summary><strong>Linux</strong>
+  
+- [How to Set Up and Use LXD on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-use-lxd-on-ubuntu-16-04)
+</details>
+
 ## Node-RED:
 - [Opto 22 - Node-RED Tutorials](https://youtube.com/playlist?list=PLKYvTRORAnx6a9tETvF95o35mykuysuOw)
 - [Opto 22 - Publishing to MQTT](http://documents.opto22.com/2235_OptoTutorial_Publishing_to_MQTT.pdf)
