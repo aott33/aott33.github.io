@@ -53,10 +53,11 @@
 - [Node-RED - Subflows Video](https://www.youtube.com/watch?v=zdDdBG_zuLU)
 - [Node-RED - Admin API Methods](https://nodered.org/docs/api/admin/methods/)
 
-## OPC UA to MQTT
+## OPC UA to MQTT/GraphQL
 - [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway)
 - [Rocworks - OPC UA to MQTT Demo](https://www.youtube.com/watch?v=3sw-6zmcNAQ)
 - [Rocworks - OPC UA to GraphQL Demo](https://www.youtube.com/watch?v=QGAoshjhHDc)
+- [Tentacle - A nodejs industrial automation edge gateway with a GraphQL API](https://github.com/joyja/tentacle)
 
 ## Style Guides
 - [Google Style Guides](https://google.github.io/styleguide/)
