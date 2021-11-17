@@ -31,7 +31,7 @@
 - [Modern Edge Architectures](https://jarautomation.io/blog/posts/2021-01-25-modern-edge-architectures)
 - [Public Facing Ignition](https://jarautomation.io/blog/posts/2019-06-09-public-facing-ignition/)
 - [Ignition Designer with Socks](https://jarautomation.io/blog/posts/2019-07-21-ignition-designer-with-socks/)
-- 
+- [Ignition 8 Deployment Best Practices](https://s3.amazonaws.com/files.inductiveautomation.com/s3fs-production/test_folder/Ignition8-Deployment-BestPractices-06-30-21.pdf?VersionId=W07ZvLo._gn1RY8adu8BQplNX3zTN_HT)
 
 ## Kafka
 - [Apache Kafka in 5 minutes](https://www.youtube.com/watch?v=PzPXRmVHMxI)
