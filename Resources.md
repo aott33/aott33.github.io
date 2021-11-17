@@ -11,6 +11,12 @@
   - [REST API Security Essentials](https://restfulapi.net/security-essentials/)
 </details>
 
+<details>
+ <summary><strong>AWS Resources</strong></summary>
+ 
+  - [AWS Skill Builder](https://explore.skillbuilder.aws/)
+</details>
+
 ## Arduino/Embedded Systems
 - [Arduino Tutorial: Machine Automation with Arduino](https://www.airpair.com/arduino/posts/machine-automation-with-arduino)
 - [PlatformIO IDE - Getting Started](https://docs.platformio.org/en/latest//integration/ide/pioide.html?utm_source=platformio&utm_medium=piohome)
