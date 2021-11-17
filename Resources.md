@@ -51,7 +51,7 @@
 
 
 <details>
- <summary><strong>Linux</strong>
+ <summary><strong>Linux</strong></summary>
   
 - [How to Set Up and Use LXD on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-use-lxd-on-ubuntu-16-04)
 </details>
