@@ -50,21 +50,29 @@
 - [Ignition 8 Deployment Best Practices](https://s3.amazonaws.com/files.inductiveautomation.com/s3fs-production/test_folder/Ignition8-Deployment-BestPractices-06-30-21.pdf?VersionId=W07ZvLo._gn1RY8adu8BQplNX3zTN_HT)
 </details>
 
-## IIoT and Industry 4.0:
+<details>
+ <summary><strong>IIoT and Industry 4.0</strong></summary>
+
 - [Industry 4.0 Mentorship Program](https://www.iiot.university/mentorship-program)
 - [Industry 4.0 Community Discord](https://www.iiot.university/discord)
+</details>
 
-## Kafka
+<details>
+ <summary><strong>Kafka</strong></summary>
+ 
 - [Apache Kafka in 5 minutes](https://www.youtube.com/watch?v=PzPXRmVHMxI)
 - [Apache Kafka Crash Course](https://www.youtube.com/watch?v=R873BlNVUB4&t=8s)
 - [Apache Kafka Use Cases: When To Use It & When Not To](https://www.upsolver.com/blog/apache-kafka-use-cases-when-to-use-not)
 - [Streaming IoT Data and MQTT to Kafka](https://www.hivemq.com/blog/streaming-iot-data-and-mqtt-messages-to-apache-kafka/)
 - [HiveMQ Solves the Challenge of Apache Kafka](https://www.hivemq.com/news/apache-kafka-iot-data-streams/)
+</details>
 
-## Learn in Public:
+<details>
+ <summary><strong>Learn in Public</strong></summary>
+ 
 - [Learn in Public](https://www.swyx.io/learn-in-public/)
 - [Pick up What They Put Down](https://www.swyx.io/puwtpd/)
-
+</details>
 
 <details>
  <summary><strong>Linux</strong></summary>
@@ -72,18 +80,27 @@
 - [How to Set Up and Use LXD on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-use-lxd-on-ubuntu-18-04)
 </details>
 
-## Node-RED:
+<details>
+ <summary><strong>Node-RED</strong></summary>
+ 
 - [Opto 22 - Node-RED Tutorials](https://youtube.com/playlist?list=PLKYvTRORAnx6a9tETvF95o35mykuysuOw)
 - [Opto 22 - Publishing to MQTT](http://documents.opto22.com/2235_OptoTutorial_Publishing_to_MQTT.pdf)
 - [Node-RED - Subflows Guide](https://nodered.org/docs/user-guide/editor/workspace/subflows)
 - [Node-RED - Subflows Video](https://www.youtube.com/watch?v=zdDdBG_zuLU)
 - [Node-RED - Admin API Methods](https://nodered.org/docs/api/admin/methods/)
+</details>
 
-## OPC UA to MQTT/GraphQL
+<details>
+ <summary><strong>OPC UA to MQTT/GraphQL</strong></summary>
+ 
 - [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway)
 - [Rocworks - OPC UA to MQTT Demo](https://www.youtube.com/watch?v=3sw-6zmcNAQ)
 - [Rocworks - OPC UA to GraphQL Demo](https://www.youtube.com/watch?v=QGAoshjhHDc)
 - [Tentacle - A nodejs industrial automation edge gateway with a GraphQL API](https://github.com/joyja/tentacle)
-
-## Style Guides
+</details>
+ 
+<details>
+ <summary><strong>Style Guides</strong></summary>
+ 
 - [Google Style Guides](https://google.github.io/styleguide/)
+</details>
