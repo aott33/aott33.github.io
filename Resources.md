@@ -18,7 +18,9 @@
   - [AWS Skill Builder](https://explore.skillbuilder.aws/)
 </details>
 
-## Arduino/Embedded Systems
+<details>
+ <summary><strong>Arduino/Embedded Systems</strong></summary>
+ 
 - [Arduino Tutorial: Machine Automation with Arduino](https://www.airpair.com/arduino/posts/machine-automation-with-arduino)
 - [PlatformIO IDE - Getting Started](https://docs.platformio.org/en/latest//integration/ide/pioide.html?utm_source=platformio&utm_medium=piohome)
 - [PlatformIO for Arduino, ESP8266, and ESP32 Tutorial - YouTube](https://www.youtube.com/watch?v=0poh_2rBq7E)
@@ -30,6 +32,7 @@
 - [P1AM - Facts Engineering Page](https://facts-engineering.github.io/)
 - [GitHub - P1AM - Facts Engineer](https://github.com/facts-engineering/P1AM)
 - [embeddedartistry](https://embeddedartistry.com/)
+</details>
 
 ## GitHub Pages:
 - [Building a Free Blog with GitHub Pages in Minutes](https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html)
