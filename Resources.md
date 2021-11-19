@@ -3,7 +3,7 @@
 <details>
  <summary><strong>API Resources</strong></summary>
  
- - <a href=https://youtu.be/GZvSYJDk-us>freeCodeCamp - What is an API</a>
+ - <a href="https://youtu.be/GZvSYJDk-us">freeCodeCamp - What is an API</a>
  - [freeCodeCamp - Webhooks for Beginners](https://youtu.be/41NOoEz3Tzc)
  - [freeCodeCamp - GraphQL Full Course](https://youtu.be/ed8SzALpx1Q)
  - [How to GraphQL](https://www.howtographql.com/)
