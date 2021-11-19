@@ -15,8 +15,9 @@
 
 <details>
  <summary><strong>AWS Resources</strong></summary>
- 
-  - [AWS Skill Builder</a> https://explore.skillbuilder.aws/)
+ <ul>
+  <li><a href="https://explore.skillbuilder.aws/">AWS Skill Builder</a></li>
+ </ul>
 </details>
 
 <details>
