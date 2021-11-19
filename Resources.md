@@ -3,13 +3,14 @@
 <details>
  <summary><strong>API Resources</strong></summary>
  
- - [freeCodeCamp - What is an API](https://youtu.be/GZvSYJDk-us)
- - [freeCodeCamp - Webhooks for Beginners](https://youtu.be/41NOoEz3Tzc)
- - [freeCodeCamp - GraphQL Full Course](https://youtu.be/ed8SzALpx1Q)
- - [How to GraphQL](https://www.howtographql.com/)
- - [Designing in RESTful web service](https://forum.inductiveautomation.com/t/designing-in-restful-web-service/44461/2)
- - [REST API Security Essentials](https://restfulapi.net/security-essentials/)
- - [How To Expose Your Local Host URL as a Public URL](https://betterprogramming.pub/how-to-expose-your-local-host-url-as-a-public-url-30ea4ff79c0e)
+ * [freeCodeCamp - What is an API](https://youtu.be/GZvSYJDk-us)
+ * [freeCodeCamp - Webhooks for Beginners](https://youtu.be/41NOoEz3Tzc)
+ * [freeCodeCamp - GraphQL Full Course](https://youtu.be/ed8SzALpx1Q)
+ * [How to GraphQL](https://www.howtographql.com/)
+ * [Designing in RESTful web service](https://forum.inductiveautomation.com/t/designing-in-restful-web-service/44461/2)
+ * [REST API Security Essentials](https://restfulapi.net/security-essentials/)
+ * [How To Expose Your Local Host URL as a Public URL](https://betterprogramming.pub/how-to-expose-your-local-host-url-as-a-public-url-30ea4ff79c0e)
+
 </details>
 
 <details>
