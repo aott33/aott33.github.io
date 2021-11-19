@@ -4,18 +4,18 @@
  <summary><strong>API Resources</strong></summary>
  
  - <a href="https://youtu.be/GZvSYJDk-us">freeCodeCamp - What is an API</a>
- - [freeCodeCamp - Webhooks for Beginners](https://youtu.be/41NOoEz3Tzc)
- - [freeCodeCamp - GraphQL Full Course](https://youtu.be/ed8SzALpx1Q)
- - [How to GraphQL](https://www.howtographql.com/)
- - [Designing in RESTful web service](https://forum.inductiveautomation.com/t/designing-in-restful-web-service/44461/2)
- - [REST API Security Essentials](https://restfulapi.net/security-essentials/)
- - [How To Expose Your Local Host URL as a Public URL](https://betterprogramming.pub/how-to-expose-your-local-host-url-as-a-public-url-30ea4ff79c0e)
+ - <a href="https://youtu.be/41NOoEz3Tzc">freeCodeCamp - Webhooks for Beginners</a>
+ - <a href="https://youtu.be/ed8SzALpx1Q">freeCodeCamp - GraphQL Full Course</a>
+ - <a href="https://www.howtographql.com/">How to GraphQL</a>
+ - <a href="https://forum.inductiveautomation.com/t/designing-in-restful-web-service/44461/2">Designing in RESTful web service</a>
+ - <a href="https://restfulapi.net/security-essentials/">REST API Security Essentials</a>
+ - <a href="https://betterprogramming.pub/how-to-expose-your-local-host-url-as-a-public-url-30ea4ff79c0e">How To Expose Your Local Host URL as a Public URL</a>
 </details>
 
 <details>
  <summary><strong>AWS Resources</strong></summary>
  
-  - [AWS Skill Builder](https://explore.skillbuilder.aws/)
+  - [AWS Skill Builder</a> https://explore.skillbuilder.aws/)
 </details>
 
 <details>
