@@ -10,7 +10,6 @@
  * [Designing in RESTful web service](https://forum.inductiveautomation.com/t/designing-in-restful-web-service/44461/2)
  * [REST API Security Essentials](https://restfulapi.net/security-essentials/)
  * [How To Expose Your Local Host URL as a Public URL](https://betterprogramming.pub/how-to-expose-your-local-host-url-as-a-public-url-30ea4ff79c0e)
-
 </details>
 
 <details>
