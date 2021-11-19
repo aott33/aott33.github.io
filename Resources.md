@@ -14,13 +14,6 @@
 </details>
 
 <details>
- <summary><strong>AWS Resources</strong></summary>
- <ul>
-  <li><a href="https://explore.skillbuilder.aws/">AWS Skill Builder</a></li>
- </ul>
-</details>
-
-<details>
  <summary><strong>Arduino/Embedded Systems</strong></summary>
  <ul>
   <li><a href="https://www.airpair.com/arduino/posts/machine-automation-with-arduino">Arduino Tutorial: Machine Automation with Arduino</a></li>
@@ -34,6 +27,13 @@
   <li><a href="https://facts-engineering.github.io/">P1AM - Facts Engineering Page</a></li>
   <li><a href="https://github.com/facts-engineering/P1AM">GitHub - P1AM - Facts Engineer</a></li>
   <li><a href="https://embeddedartistry.com/">embeddedartistry</a></li>
+ </ul>
+</details>
+
+<details>
+ <summary><strong>AWS Resources</strong></summary>
+ <ul>
+  <li><a href="https://explore.skillbuilder.aws/">AWS Skill Builder</a></li>
  </ul>
 </details>
 
