@@ -17,10 +17,8 @@
  <summary><strong>Arduino/Embedded Systems</strong></summary>
  <ul>
   <li><a href="https://www.airpair.com/arduino/posts/machine-automation-with-arduino">Arduino Tutorial: Machine Automation with Arduino</a></li>
-  
-* [Containers](https://www.cplusplus.com/reference/stl/)
-* [ArduinoLog - C++ Log library for Arduino devices](https://github.com/thijse/Arduino-Log)
-  
+  <li><a href="https://www.cplusplus.com/reference/stl/">Containers</a></li>
+  <li><a href="https://github.com/thijse/Arduino-Log">ArduinoLog - C++ Log library for Arduino devices</a></li>
   <li><a href="https://docs.platformio.org/en/latest//integration/ide/pioide.html?utm_source=platformio&utm_medium=piohome">PlatformIO IDE - Getting Started</a></li>
   <li><a href="https://www.youtube.com/watch?v=0poh_2rBq7E">PlatformIO for Arduino, ESP8266, and ESP32 Tutorial</a></li>
   <li><a href="https://www.amazon.ca/Making-Embedded-Systems-Patterns-Software-ebook/dp/B005ZTO0LG/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1636476028&sr=1-1">Making Embedded Systems - Book</a></li>
