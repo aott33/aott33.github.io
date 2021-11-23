@@ -23,7 +23,8 @@
   <li><a href="https://www.youtube.com/watch?v=0poh_2rBq7E">PlatformIO for Arduino, ESP8266, and ESP32 Tutorial</a></li>
   <li><a href="https://www.amazon.ca/Making-Embedded-Systems-Patterns-Software-ebook/dp/B005ZTO0LG/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1636476028&sr=1-1">Making Embedded Systems - Book</a></li>
   <li><a href="https://www.controllino.com/">Controllino</a></li>
-  <li><a href="https://www.automationdirect.com/adc/shopping/catalog/programmable_controllers/open_source_controllers_(arduino-compatible)/productivityopen_(arduino-compatible)#sort=undefined%20asc&start=0">ProductivityOpen Controllers</a></li>
+  <li><a href="https://github.com/mrwolfjunior/TrigPLC">Controllino - example FreeRTOS project</a></li>
+  <li><a href="https://github.com/feilipu/Arduino_FreeRTOS_Library">Arduino FreeRTOS repo</a></li>
   <li><a href="https://accautomation.ca/series/productivity-open-arduino-compatible-industrial-controller/">Productivity Open - ACC Automation Series</a></li>
   <li><a href="https://community.automationdirect.com/s/topic/0TO3u0000009OgnGAE/p1am100">P1AM-100 Forum</a></li>
   <li><a href="https://facts-engineering.github.io/">P1AM - Facts Engineering Page</a></li>
