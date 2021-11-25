@@ -93,6 +93,14 @@
 </details>
 
 <details>
+ <summary><strong>Linux</strong></summary>
+ <ul>
+  <li><a href="https://www.hivemq.com/downloads/docker/">HiveMQ Docker Setup Guide</a></li>
+  <li><a href="https://hub.docker.com/r/hivemq/hivemq4/">HiveMQ Docker Image</a></li>
+ </ul>
+</details>
+
+<details>
  <summary><strong>Node-RED</strong></summary>
  <ul>
   <li><a href="https://youtube.com/playlist?list=PLKYvTRORAnx6a9tETvF95o35mykuysuOw">Opto 22 - Node-RED Tutorials</a></li>
