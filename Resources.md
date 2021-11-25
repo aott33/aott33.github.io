@@ -41,8 +41,10 @@
 </details>
 
 <details>
- <summary><strong>GitHub Pages</strong></summary>
+ <summary><strong>Git/GitHub</strong></summary>
  <ul>
+  <li><a href="https://git-scm.com/book/en/v2">Pro Git Book</a></li>
+  <li><a href="https://git-scm.com/doc">Git Docs</a></li>
   <li><a href="https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html">Building a Free Blog with GitHub Pages in Minutes</a></li>
   <li><a href="https://github.com/utterance/utterances">Add comments to GitHub Pages using utterances</a></li>
   </ul>
@@ -93,7 +95,7 @@
 </details>
 
 <details>
- <summary><strong>Linux</strong></summary>
+ <summary><strong>MQTT</strong></summary>
  <ul>
   <li><a href="https://www.hivemq.com/downloads/docker/">HiveMQ Docker Setup Guide</a></li>
   <li><a href="https://hub.docker.com/r/hivemq/hivemq4/">HiveMQ Docker Image</a></li>
