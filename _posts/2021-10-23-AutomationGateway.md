@@ -2,7 +2,7 @@
 
 ## Table of Contents  
 - [Introduction](#introduction)  
-- [What is the Frankenstein Automation Gateway](#what-is-the-frankenstein-automation-gateway)
+- [What is the Frankenstein Automation Gateway?](#what-is-the-frankenstein-automation-gateway)
 - [Steps Taken](#steps-taken)
     - [Review Documentation](#1-go-to-frankenstein-automation-gateway)
     - [Install Docker Desktop](#2-install-docker-desktop)
@@ -20,7 +20,7 @@ Prior to implementing this gateway, I had very little experience working with AP
 
 Below are the steps that I took to implement the Frankenstein Automation Gateway:
 
-## What is the Frankenstein Automation Gateway:
+## What is the Frankenstein Automation Gateway?
 
 "An OPC UA gateway which gives you access to your OPC UA values via MQTT or GraphQL (HTTP). If you have an OPC UA server in your PLC, or a SCADA system with an OPC UA server, you can query data from there via MQTT and GraphQL (HTTP). In addition, the gateway can also log value changes from OPC UA nodes in an InfluxDB, IoTDB, Kafka, and others."
 - Excerpt from the [Frankenstein Automation Gateway GitHub Page](https://github.com/vogler75/automation-gateway) 
