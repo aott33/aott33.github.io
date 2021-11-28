@@ -1,8 +1,17 @@
 # Frankenstein Automation Gateway Test
 
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis) 
+## Table of Contents  
+- [Introduction](#introduction)  
+- [What is the Frankenstein Automation Gateway](#what-is-the-frankenstein-automation-gateway)
+- [Steps Taken](#steps-taken)
+    - [Review Documentation](#1-go-to-frankenstein-automation-gateway)
+    - [Install Docker Desktop](#2-install-docker-desktop)
+    - [Pull Docker Image](#3-go-to-the-rocworksautomation-gateway-docker-page)
+    - [Create config.yaml File](#4-create-a-configyaml-file-and-add-the-needed-configurations)
+    - [Docker run command](#6-open-command-prompt-and-call-the-docker-run-command)
+    - [Access OPC UA values via MQTT](#7-accessing-opc-ua-data-via-mqtt)
+    - [Access OPC UA values via GraphQL](#8-accessing-opc-ua-data-via-graphql)
+- [Summary](#summary)
 
 ## Introduction:
 Several months ago I found the [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and finally got around to testing it out. This gateway allows you to access data from an OPC UA server via MQTT and GraphQL.
