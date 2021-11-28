@@ -1,5 +1,9 @@
 # Frankenstein Automation Gateway Test
 
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis) 
+
 ## Introduction:
 Several months ago I found the [Frankenstein Automation Gateway](https://github.com/vogler75/automation-gateway) and finally got around to testing it out. This gateway allows you to access data from an OPC UA server via MQTT and GraphQL.
 
