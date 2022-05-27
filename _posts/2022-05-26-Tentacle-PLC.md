@@ -50,4 +50,6 @@ process logic is written in Javascript.
 
 ### Docker Set-up:
 
-### Configure Code Server:
+### Container urls:
+- Tentacle PLC - [ip-address]:4000 ```http://192.168.1.72:4000```
+- 
