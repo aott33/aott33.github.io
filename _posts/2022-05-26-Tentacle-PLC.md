@@ -51,5 +51,13 @@ process logic is written in Javascript.
 ### Docker Set-up:
 
 ### Container urls:
-- Tentacle PLC - [ip-address]:4000 ```http://192.168.1.72:4000```
-- 
+- Tentacle PLC - ```http://localhost:4000```
+- Tentacle PLC UI - ```http://localhost:3000```
+- Code Server - ```http://localhost:8080```
+    - Note: I got this message when I tried accessing the Code server:
+    - ![image](https://user-images.githubusercontent.com/48938478/170784283-1dbb2edf-8368-4be3-ba27-79472bd79c64.png)
+    - See below for steps taken to [determine code server password](#determine-code-server-password)
+### Determine Code Server Password:
+- I followed the instructions on this [link](https://www.baeldung.com/ops/docker-container-filesystem#2-spawning-a-shell-in-a-running-container)
+- Identify the container id with ```sudo docker ps```:
+- Pass /bin/bash as the argument with -it option to docker exec ```docker exec -it [CONTAINER_ID] /bin/bash```:
