@@ -18,7 +18,9 @@
 ## Introduction:
 ### What is Tentacle PLC?
 ```
-Tentacle PLC is a modern Soft PLC runtime with the basic features of a traditional programmable logic controller platform, but the process logic is written in Javascript.
+Tentacle PLC is a modern Soft PLC runtime with the basic features
+of a traditional programmable logic controller platform, but the
+process logic is written in Javascript.
 ```
 - Excerpt from [Tentacle PLC Guide](https://www.tentacleplc.com/guide/)
 
