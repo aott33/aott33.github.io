@@ -90,4 +90,7 @@ process logic is written in Javascript.
     - secondary.js
 
 ### Files used in program:
-- 
+- [config.jspn](https://github.com/aott33/tentacle-plc-testing/blob/main/config.json)
+- [variables.json](https://github.com/aott33/tentacle-plc-testing/blob/main/variables.json)
+- [main.js](https://github.com/aott33/tentacle-plc-testing/blob/main/main.js)
+- [secondary.js](https://github.com/aott33/tentacle-plc-testing/blob/main/secondary.js)
