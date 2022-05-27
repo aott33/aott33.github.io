@@ -72,3 +72,5 @@ process logic is written in Javascript.
 - Print config.yaml file contents to terminal ```cat config.yaml```:
 
 ## PLC Programming Steps:
+- Go to the code-server url ```http://localhost:8080``` and enter password. See [determine code server password](#determine-code-server-password)
+- 
