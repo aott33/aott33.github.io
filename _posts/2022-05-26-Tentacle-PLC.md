@@ -7,11 +7,11 @@
 - [Hardware](#hardware)
 - [Software](#software)
 - [Documentation](#documentation)
-- [Steps Taken](#steps-taken)
+- [Installation Steps Taken](#steps-taken)
     - [Ubuntu Set-up](#ubuntu-set-up)
     - [Docker Set-up](#docker-set-up) 
     - [Configure Code Server](#configure-code-server)  
-- [Challenges](#challenges)
+- [PLC Programming Steps](#plc-programming-steps)
 - [Summary](#summary)
 - [Next Steps](#next-steps)
 
@@ -70,3 +70,5 @@ process logic is written in Javascript.
 - Pass /bin/bash as the argument with -it option to docker exec ```docker exec -it [CONTAINER_ID] /bin/bash```:
 - Change directory to config.yaml file location ```cd ~/.config/code-server```:
 - Print config.yaml file contents to terminal ```cat config.yaml```:
+
+## PLC Programming Steps:
