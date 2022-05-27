@@ -47,13 +47,19 @@ process logic is written in Javascript.
 
 ## Steps Taken:
 ### Ubuntu Set-up:
+- Download [Ubuntu 22.04](https://ubuntu.com/download/desktop)
+- Follow the [Install Ubuntu desktop tutorial](https://ubuntu.com/tutorials/install-ubuntu-desktop#2-download-an-ubuntu-image)
 
 ### Docker Set-up:
+- Follow the docker engine installation [tutorial](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
 ### Container urls:
-- Tentacle PLC - ```http://localhost:4000```
-- Tentacle PLC UI - ```http://localhost:3000```
-- Code Server - ```http://localhost:8080```
+- Tentacle PLC
+    - ```http://localhost:4000```
+- Tentacle PLC UI
+    - ```http://localhost:3000```
+- Code Server
+    - ```http://localhost:8080```
     - Note: I got this message when I tried accessing the Code server:
     ![image](https://user-images.githubusercontent.com/48938478/170784283-1dbb2edf-8368-4be3-ba27-79472bd79c64.png)
     - See below for steps taken to [determine code server password](#determine-code-server-password)
