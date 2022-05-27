@@ -35,7 +35,7 @@ process logic is written in Javascript.
 - USB Flash Drive
 
 ## Software:
-- [Ubuntu 22.04]([https://github.com/iohubos/iohubos/releases](https://ubuntu.com/download/desktop))
+- [Ubuntu 22.04](https://ubuntu.com/download/desktop)
 - [Docker Engine for Linux](https://docs.docker.com/engine/install/ubuntu/)
 - [Docker Compose](https://docs.docker.com/compose/install/) Note: Apparently this is installed with the Docker Engine. Need to confirm that.
 - [Docker Compose file from the Tentacle PLC Repository](https://gitlab.com/joyja/tentacle-plc/-/raw/main/docker-compose.yml?inline=false)
