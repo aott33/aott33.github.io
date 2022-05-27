@@ -76,3 +76,4 @@ process logic is written in Javascript.
 - Followed the [Tentacle PLC Guide](https://www.tentacleplc.com/guide/directory-structure.html#the-runtime-directory) to create a test program
 ### config.json:
 - I copied some of the code from the [config.json](https://www.tentacleplc.com/guide/directory-structure.html#the-config-json-file) section in the Tentacle PLC Guide
+- I modified the MQTT configuration and put in the credentials for my HiveMQ Cloud Broker
