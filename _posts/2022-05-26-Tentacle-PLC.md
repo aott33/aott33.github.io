@@ -36,8 +36,10 @@ process logic is written in Javascript.
 
 ## Software:
 - [Ubuntu 22.04](https://ubuntu.com/download/desktop)
-- [Docker Engine for Linux](https://docs.docker.com/engine/install/ubuntu/)
-- [Docker Compose](https://docs.docker.com/compose/install/) Note: Apparently this is installed with the Docker Engine. Need to confirm that.
-- [Docker Compose file from the Tentacle PLC Repository](https://gitlab.com/joyja/tentacle-plc/-/raw/main/docker-compose.yml?inline=false)
+- Information below is from the Tentacle PLC Guide - [Getting Started Section](https://www.tentacleplc.com/guide/getting-started.html#prerequisites)
+    - [Node.js v14+](https://nodejs.org/)
+    - [Docker Engine for Linux](https://docs.docker.com/engine/install/ubuntu/)
+    - [Docker Compose](https://docs.docker.com/compose/install/) Note: Apparently this is installed with the Docker Engine. Need to confirm that.
+    - [Docker Compose file from the Tentacle PLC Repository](https://gitlab.com/joyja/tentacle-plc/-/raw/main/docker-compose.yml?inline=false)
 
 ## Documentation:
