@@ -73,4 +73,6 @@ process logic is written in Javascript.
 
 ## PLC Programming Steps:
 - Go to the code-server url ```http://localhost:8080``` and enter password. See [determine code server password](#determine-code-server-password)
-- 
+- Followed the [Tentacle PLC Guide](https://www.tentacleplc.com/guide/directory-structure.html#the-runtime-directory) to create a test program
+### config.json:
+
