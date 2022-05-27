@@ -43,3 +43,11 @@ process logic is written in Javascript.
     - [Docker Compose file from the Tentacle PLC Repository](https://gitlab.com/joyja/tentacle-plc/-/raw/main/docker-compose.yml?inline=false)
 
 ## Documentation:
+- [Tentacle PLC Guide](https://www.tentacleplc.com/guide/)
+
+## Steps Taken:
+### Ubuntu Set-up:
+
+### Docker Set-up:
+
+### Configure Code Server:
