@@ -33,3 +33,11 @@ process logic is written in Javascript.
 - [USB Hub](https://www.staples.com/nxt-technologies-4-port-usb-2-0-hub-nx56850/product_24401668)
 - [24Vdc Power Supply](https://www.automationdirect.com/adc/shopping/catalog/power_products_(electrical)/dc_power_supplies/rhino_select_(din_rail)/psb-s_series/psb24-060s)
 - USB Flash Drive
+
+## Software:
+- [Ubuntu 22.04]([https://github.com/iohubos/iohubos/releases](https://ubuntu.com/download/desktop))
+- [Docker Engine for Linux](https://docs.docker.com/engine/install/ubuntu/)
+- [Docker Compose](https://docs.docker.com/compose/install/) Note: Apparently this is installed with the Docker Engine. Need to confirm that.
+- [Docker Compose file from the Tentacle PLC Repository](https://gitlab.com/joyja/tentacle-plc/-/raw/main/docker-compose.yml?inline=false)
+
+## Documentation:
