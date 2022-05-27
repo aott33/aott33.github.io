@@ -61,3 +61,5 @@ process logic is written in Javascript.
 - I followed the instructions on this [link](https://www.baeldung.com/ops/docker-container-filesystem#2-spawning-a-shell-in-a-running-container)
 - Identify the container id with ```sudo docker ps```:
 - Pass /bin/bash as the argument with -it option to docker exec ```docker exec -it [CONTAINER_ID] /bin/bash```:
+- Change directory to config.yaml file location ```cd ~/.config/code-server```:
+- Print config.yaml file contents to terminal ```cat config.yaml```:
