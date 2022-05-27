@@ -75,4 +75,4 @@ process logic is written in Javascript.
 - Go to the code-server url ```http://localhost:8080``` and enter password. See [determine code server password](#determine-code-server-password)
 - Followed the [Tentacle PLC Guide](https://www.tentacleplc.com/guide/directory-structure.html#the-runtime-directory) to create a test program
 ### config.json:
-
+- I copied some of the code from the [config.json](https://www.tentacleplc.com/guide/directory-structure.html#the-config-json-file) section in the Tentacle PLC Guide
