@@ -52,8 +52,7 @@ process logic is written in Javascript.
 
 ### Docker Set-up:
 - Follow the docker engine installation [tutorial](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
-- If you already follow the instructions to install Docker Engine, Docker Compose should already be installed:
-    ![image](https://user-images.githubusercontent.com/48938478/170785924-9d9fe7c2-4289-442a-8dfc-4016287a59e2.png)
+- [If you already follow the instructions to install Docker Engine, Docker Compose should already be installed](https://docs.docker.com/compose/install/#install-compose-on-linux-systems)
 
 ### Container urls:
 - Tentacle PLC
