@@ -106,9 +106,10 @@ Excerpt from [Tentacle PLC Guide](https://www.tentacleplc.com/guide/)
     - The PLC stopped running and I was able to restart the PLC using the `restartPlc` [GraphQL mutation](https://www.tentacleplc.com/guide/graphql.html#mutation)
 - I like that each variable in `variables.json` is published using the Sparkplug B specification
     - [MQTT Variables section from Tentacle PLC](https://www.tentacleplc.com/guide/mqtt.html#variables)
+- The UI is quite nice. See image below:
+    ![image](https://user-images.githubusercontent.com/48938478/170809036-0ef305c3-bd23-430b-828d-34a1566f3d49.png)
 
 ### Next Steps:
 - Integrate the Tentacle PLC with [Ignition](https://inductiveautomation.com/)
 - Create a more complex PLC program for a real world application
 - Connect Remote IO
- 
