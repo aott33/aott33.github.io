@@ -17,12 +17,8 @@
 
 ## Introduction:
 ### What is Tentacle PLC?
-```
-Tentacle PLC is a modern Soft PLC runtime with the basic features
-of a traditional programmable logic controller platform, but the
-process logic is written in Javascript.
-```
-- Excerpt from [Tentacle PLC Guide](https://www.tentacleplc.com/guide/)
+> Tentacle PLC is a modern Soft PLC runtime with the basic features of a traditional programmable logic controller platform, but the process logic is written in Javascript.
+Excerpt from [Tentacle PLC Guide](https://www.tentacleplc.com/guide/)
 
 ### Why am I testing Tentacle PLC?
 - I am taking a full-stack engineering program and learning JavaScript. So, I thought this would be a good opportunity to continue developing my skills while testing out what I believe is a great soft PLC project.
@@ -72,7 +68,9 @@ process logic is written in Javascript.
 - Print config.yaml file contents to terminal ```cat config.yaml```:
 
 ## PLC Programming Steps:
-- Go to the code-server url ```http://localhost:8080``` and enter password. See [determine code server password](#determine-code-server-password)
+- The goal was to get a simple PLC program working and connect to a MQTT broker.
+- After the installation and configuration, it didn't take long to achieve this goal
+- To start programming I went to the code-server url ```http://localhost:8080``` and enter password. See [determine code server password](#determine-code-server-password)
 - Followed the [Tentacle PLC Guide](https://www.tentacleplc.com/guide/directory-structure.html#the-runtime-directory) to create a test program
 
 ### Configure config.json:
@@ -94,3 +92,8 @@ process logic is written in Javascript.
 - [variables.json](https://github.com/aott33/tentacle-plc-testing/blob/main/variables.json)
 - [main.js](https://github.com/aott33/tentacle-plc-testing/blob/main/main.js)
 - [secondary.js](https://github.com/aott33/tentacle-plc-testing/blob/main/secondary.js)
+
+### Summary:
+- This soft PLC required a bit of a learning curve for myself, I am sure others will find the configuration process quite straightforward
+- After the installation and setup, the programming portion was very nice and straightforward
+    - The PLC programming portion is well documented and I was able to get a simple PLC 
