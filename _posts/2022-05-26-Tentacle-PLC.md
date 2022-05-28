@@ -109,4 +109,6 @@ Excerpt from [Tentacle PLC Guide](https://www.tentacleplc.com/guide/)
 
 ### Next Steps:
 - Integrate the Tentacle PLC with [Ignition](https://inductiveautomation.com/)
+- Create a more complex PLC program for a real world application
+- Connect Remote IO
  
