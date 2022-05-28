@@ -102,8 +102,10 @@ Excerpt from [Tentacle PLC Guide](https://www.tentacleplc.com/guide/)
     - I am sure others will find the configuration process quite straightforward
 - After the installation and setup, the programming portion was very nice and straightforward
 - The PLC programming portion is well documented and I was able to get a simple PLC program running
-- I liked the GraphQL capabilities
+- I like the GraphQL API capabilities
     - The PLC stopped running and I was able to restart the PLC using the `restartPlc` [GraphQL mutation](https://www.tentacleplc.com/guide/graphql.html#mutation)
+- I like that each variable in `variables.json` is published using the Sparkplug B specification
+    - [MQTT Variables section from Tentacle PLC](https://www.tentacleplc.com/guide/mqtt.html#variables)
 
 ### Next Steps:
 - Integrate the Tentacle PLC with [Ignition](https://inductiveautomation.com/)
