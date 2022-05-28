@@ -60,13 +60,15 @@ Excerpt from [Tentacle PLC Guide](https://www.tentacleplc.com/guide/)
     - ```http://localhost:8080```
     - Note: I got this message when I tried accessing the Code server:
     ![image](https://user-images.githubusercontent.com/48938478/170784283-1dbb2edf-8368-4be3-ba27-79472bd79c64.png)
-    - See below for steps taken to [determine code server password](#determine-code-server-password)
+    - See [Determine Code Server Password](#determine-code-server-password) to learn how I retrieved the password
+
 ### Determine Code Server Password:
 - I followed the instructions on this [link](https://www.baeldung.com/ops/docker-container-filesystem#2-spawning-a-shell-in-a-running-container)
 - Identify the container id with ```sudo docker ps```:
 - Pass /bin/bash as the argument with -it option to docker exec ```docker exec -it [CONTAINER_ID] /bin/bash```:
 - Change directory to config.yaml file location ```cd ~/.config/code-server```:
 - Print config.yaml file contents to terminal ```cat config.yaml```:
+- Copy the password from the terminal
 
 ## PLC Programming Steps:
 - The goal was to get a simple PLC program working and connect to a MQTT broker.
