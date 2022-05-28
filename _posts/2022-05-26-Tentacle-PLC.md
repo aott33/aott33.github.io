@@ -79,7 +79,7 @@ Excerpt from [Tentacle PLC Guide](https://www.tentacleplc.com/guide/)
 ### Configure config.json:
 - I copied the example [config.json](https://www.tentacleplc.com/guide/directory-structure.html#the-config-json-file) code in the Tentacle PLC Guide
 - I modified the MQTT configuration and put in the credentials for my HiveMQ Cloud Broker
-- I left the modbus section empty as I don't have a modbus device at the moment. This section is for confifuguring the connection to a Modbus Remote IO device
+- I left the modbus section empty as I don't have a modbus device at the moment. This section is for configuring the connection to a Modbus Remote IO device
 
 ### Configure variable.json:
 - I copied the example [variables.json](https://www.tentacleplc.com/guide/variables.html#variables-json) code in the Tentacle PLC Guide
