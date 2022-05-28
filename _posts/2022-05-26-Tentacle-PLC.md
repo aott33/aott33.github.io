@@ -97,6 +97,14 @@ Excerpt from [Tentacle PLC Guide](https://www.tentacleplc.com/guide/)
 - [secondary.js](https://github.com/aott33/tentacle-plc-testing/blob/main/secondary.js)
 
 ### Summary:
-- This soft PLC required a bit of a learning curve for myself, I am sure others will find the configuration process quite straightforward
+- The initial installation and configuration took the most time as I am not too familiar with docker
+    - After this project, I am definitely more confident but have much more to learn
+    - I am sure others will find the configuration process quite straightforward
 - After the installation and setup, the programming portion was very nice and straightforward
-    - The PLC programming portion is well documented and I was able to get a simple PLC 
+- The PLC programming portion is well documented and I was able to get a simple PLC program running
+- I liked the GraphQL capabilities
+    - The PLC stopped running and I was able to restart the PLC using the `restartPlc` [GraphQL mutation](https://www.tentacleplc.com/guide/graphql.html#mutation)
+
+### Next Steps:
+- Integrate the Tentacle PLC with [Ignition](https://inductiveautomation.com/)
+ 
