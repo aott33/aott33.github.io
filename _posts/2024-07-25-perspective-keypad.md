@@ -1,6 +1,6 @@
 # Perspective Keypad Instructions
 
-<video src="https://github.com/user-attachments/assets/38f469f8-0fd3-49f7-b0ba-75ebc349f242" controls="controls" style="max-width: 730px;">
+<video width="100%" src="https://github.com/user-attachments/assets/38f469f8-0fd3-49f7-b0ba-75ebc349f242" controls="controls">
 </video>
 
 ## Adding Number Keypad to Ignition Project
