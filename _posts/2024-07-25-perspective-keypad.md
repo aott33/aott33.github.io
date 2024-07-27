@@ -27,22 +27,15 @@
 3. Setup custom properties
   - Select “Add Custom Property”
   - Select “Object” and type “keypad” all lowercase
-
-	![image8](https://github.com/user-attachments/assets/671443c0-ce60-4977-bf97-e6d5b7fd161e)
-	- Select “Add Object Members” and add the following items:
-    title, units, centerScreen
-		
-  ![image7](https://github.com/user-attachments/assets/b5b14a87-87e0-4ee6-bbc6-4f8f7d0cacf9)
+  - ![image8](https://github.com/user-attachments/assets/671443c0-ce60-4977-bf97-e6d5b7fd161e)
+  - Select “Add Object Members” and add the following items: title, units, centerScreen
+  - ![image7](https://github.com/user-attachments/assets/b5b14a87-87e0-4ee6-bbc6-4f8f7d0cacf9)
 
 4. Setup the popup
   - Right click the numeric entry field and select “Configure Event” or type “ctrl + j”
-
-    ![image5](https://github.com/user-attachments/assets/b092b445-6964-4f64-a7c3-453c3220a746)
-
+  - ![image5](https://github.com/user-attachments/assets/b092b445-6964-4f64-a7c3-453c3220a746)
   - Select Mouse Events > onMouseDown then click the plus icon and select “Script”
-
-    ![image3](https://github.com/user-attachments/assets/414bff67-f0db-4a0a-8688-569abf3483ed)
-
+  - ![image3](https://github.com/user-attachments/assets/414bff67-f0db-4a0a-8688-569abf3483ed)
   - Paste the following script into Script field and select “OK”
     ```
       popParams = {'owner': self.meta.name, 'min': self.props.inputBounds.minimum, 'max': self.props.inputBounds.maximum, 'oldValue': self.props.value, 'units': self.custom.keypad.units}
