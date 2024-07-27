@@ -28,10 +28,9 @@
   - Select “Add Custom Property”
   - Select “Object” and type “keypad” all lowercase
 
-    ![image8](https://github.com/user-attachments/assets/671443c0-ce60-4977-bf97-e6d5b7fd161e)
-
-  - Select “Add Object Members” and add the following items:
-	title, units, centerScreen
+	![image8](https://github.com/user-attachments/assets/671443c0-ce60-4977-bf97-e6d5b7fd161e)
+	- Select “Add Object Members” and add the following items:
+    title, units, centerScreen
 		
   ![image7](https://github.com/user-attachments/assets/b5b14a87-87e0-4ee6-bbc6-4f8f7d0cacf9)
 
