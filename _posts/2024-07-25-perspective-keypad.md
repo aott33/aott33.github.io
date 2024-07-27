@@ -4,14 +4,18 @@
 </video>
 
 ## Adding Number Keypad to Ignition Project
-1. Download the keypad from here
+1. Download the keypad from [here](https://inductiveautomation.com/exchange/2380/installation)
 2. Unzip download to access correct zip file
+	![image10](https://github.com/user-attachments/assets/0e72774f-1098-4ef4-b734-519f16cb802c)
 
 3. In Designer, select File > Import
+	![image2](https://github.com/user-attachments/assets/c563183b-6bfd-455c-9679-fa880c16bd10)
 
 4. In Open pop up, select the keypad.zip file and click open
+	![image1](https://github.com/user-attachments/assets/9e590864-5606-4000-9d78-615070a5114f)
 
 5. In Import pop up, Select all items and select Import
+	![image6](https://github.com/user-attachments/assets/0c77542e-a000-439f-bf84-8bbade398a04)
 
 ## Creating popup
 1. Navigate to the view with the numeric entry field
@@ -19,12 +23,19 @@
 3. Setup custom properties
   - Select “Add Custom Property”
   - Select “Object” and type “keypad” all lowercase
+    ![image8](https://github.com/user-attachments/assets/671443c0-ce60-4977-bf97-e6d5b7fd161e)
+
   - Select “Add Object Members” and add the following items:
 		title, units, centerScreen
-		
-7. Setup the popup
+		![image7](https://github.com/user-attachments/assets/b5b14a87-87e0-4ee6-bbc6-4f8f7d0cacf9)
+
+4. Setup the popup
   - Right click the numeric entry field and select “Configure Event” or type “ctrl + j”
+    ![image5](https://github.com/user-attachments/assets/b092b445-6964-4f64-a7c3-453c3220a746)
+
   - Select Mouse Events > onMouseDown then click the plus icon and select “Script”
+    ![image3](https://github.com/user-attachments/assets/414bff67-f0db-4a0a-8688-569abf3483ed)
+
   - Paste the following script into Script field and select “OK”
     ```
       popParams = {'owner': self.meta.name, 'min': self.props.inputBounds.minimum, 'max': self.props.inputBounds.maximum, 'oldValue': self.props.value, 'units': self.custom.keypad.units}
