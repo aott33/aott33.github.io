@@ -20,7 +20,9 @@ plugins:
 
 titles_from_headings:
   strip_title: true
-  collections: true
+
+collections:
+  output: true
 
 header_pages:
   - resources.md
