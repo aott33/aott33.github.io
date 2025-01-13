@@ -1,5 +1,5 @@
 ---
-tags: Open Source
+tags: 'Open Source'
 ---
 
 # Frankenstein Automation Gateway Test
