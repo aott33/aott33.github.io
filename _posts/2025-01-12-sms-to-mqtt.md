@@ -22,10 +22,10 @@ This is a two part blog series walking through the steps to bring an sms alarm i
 ![image](https://github.com/user-attachments/assets/39cd2618-a41b-406c-8b6f-9557b02c648b)
    
 4. Click **Dependencies** to import mqtt npm module, fill in the fields and click **Add** (see image)
-![image](https://github.com/user-attachments/assets/7dee8341-0567-41f5-b95a-89d656d098f6)|
+![image](https://github.com/user-attachments/assets/7dee8341-0567-41f5-b95a-89d656d098f6)
 
 5. Navigate to function and update script, click **Save**, then click **Deploy All**. Console will update when the process is complete. Below the screenshot is a sample script that takes the body of the incoming SMS message and publishes it to the [HiveMQ Public Broker]([url](https://www.hivemq.com/mqtt/public-mqtt-broker/)) `mqtt://broker.hivemq.com` 
-![image](https://github.com/user-attachments/assets/1ca1f9a3-0b92-469d-852e-37a91fad1713)|
+![image](https://github.com/user-attachments/assets/1ca1f9a3-0b92-469d-852e-37a91fad1713)
 
 #### Sample Script
 ```
