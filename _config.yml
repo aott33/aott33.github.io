@@ -6,20 +6,7 @@ description: The goal of this blog is to help build my Automation Software Engin
 # Minima variables
 github_username:   aott33
 
-# theme: minima
-remote_theme: jekyll/minima
-
-# Minima specific settings, which are only available from Minima 3.0 onward.
-minima:
-  # Minima skin selection.
-  # Available skins are:
-  # classic	           Default, light color scheme.
-  # dark	             Dark variant of the classic skin.
-  # auto	             Adaptive skin based on the default classic and dark skins.
-  # solarized-light	   Light variant of solarized color scheme.
-  # solarized-dark	   Dark variant of solarized color scheme.
-  # solarized	         Adaptive skin for solarized color scheme skins.
-  skin: dark
+theme: minima
 
 rss: rss
 
@@ -30,7 +17,6 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-remote-theme
 
 titles_from_headings:
   strip_title: true
