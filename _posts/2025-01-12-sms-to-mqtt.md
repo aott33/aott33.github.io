@@ -1,5 +1,5 @@
 # Introduction
-I was given the challenge to bring an SMS alarm into Ignition and trigger an. This is a two part blog series walking through the steps to bring an sms alarm into Ignition. Part 1 will walk through the steps to get the incoming SMS into a broker using Twilio. Part 2 will walk through the steps to configure Ignition to read the message and trigger an alarm.
+This is a two part blog series walking through the steps to bring an sms alarm into Ignition and trigger an alarm. Part 1 (this post) will walk through the steps to get the incoming SMS into a broker using Twilio. Part 2 will walk through the steps to configure Ignition to read the message and trigger an alarm.
 
 # Steps
 ## Prerequisites
