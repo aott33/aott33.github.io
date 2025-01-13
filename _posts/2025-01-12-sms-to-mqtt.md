@@ -15,19 +15,19 @@ This is a two part blog series walking through the steps to bring an sms alarm i
 1. Go to [Twilio Console](https://www.twilio.com/console/functions/overview)
 2. [Create a Service](https://www.twilio.com/console/functions/overview/services), fill name field, and click **Next**
 
-	|![image](https://github.com/user-attachments/assets/f862a478-0f86-4790-89c4-a2166ed07bd2)|
-   	-
+	|![image](https://github.com/user-attachments/assets/f862a478-0f86-4790-89c4-a2166ed07bd2)
+	|-
   
-  	|![image](https://github.com/user-attachments/assets/60e5548c-d44f-4443-81bf-e660ecc2d79f)|
-   	-
+  	|![image](https://github.com/user-attachments/assets/60e5548c-d44f-4443-81bf-e660ecc2d79f)
+   	|-
    
 4. When redirected to the new Service, click the **Add +** button and select **Add Function** from the dropdown and update function name
 
-	|![image](https://github.com/user-attachments/assets/07458e62-e402-4d1b-8cef-6729f6a66b14)|
-   	-
+	|![image](https://github.com/user-attachments/assets/07458e62-e402-4d1b-8cef-6729f6a66b14)
+	|-
    
-	|![image](https://github.com/user-attachments/assets/39cd2618-a41b-406c-8b6f-9557b02c648b)|
-   	-
+	|![image](https://github.com/user-attachments/assets/39cd2618-a41b-406c-8b6f-9557b02c648b)
+	|-
    
 4. Click **Dependencies** to import mqtt npm module, fill in the fields and click **Add** (see image)
   |![image](https://github.com/user-attachments/assets/7dee8341-0567-41f5-b95a-89d656d098f6)|
