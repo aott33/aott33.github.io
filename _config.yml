@@ -23,8 +23,8 @@ titles_from_headings:
   collections: true
 
 header_pages:
-  - resources.html
-  - archive.html
+  - resources.md
+  - archive.md
 
 defaults:
   - scope:
