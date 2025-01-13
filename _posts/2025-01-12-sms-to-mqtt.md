@@ -12,7 +12,7 @@
   ![image](https://github.com/user-attachments/assets/39cd2618-a41b-406c-8b6f-9557b02c648b)
 4. Click **Dependencies** to import mqtt npm module, fill in the fields and click **Add** (see image)
   ![image](https://github.com/user-attachments/assets/7dee8341-0567-41f5-b95a-89d656d098f6)
-5. Navigate to function and update script, click **Save**, then click **Deploy All**. Console will update when the process is complete. Below the screenshot is a sample script that takes the body of the incoming SMS message and publishes it to the HiveMQ test broker `mqtt://broker.hivemq.com`
+5. Navigate to function and update script, click **Save**, then click **Deploy All**. Console will update when the process is complete. Below the screenshot is a sample script that takes the body of the incoming SMS message and publishes it to the [HiveMQ Public Broker]([url](https://www.hivemq.com/mqtt/public-mqtt-broker/)) `mqtt://broker.hivemq.com` 
   ![image](https://github.com/user-attachments/assets/1ca1f9a3-0b92-469d-852e-37a91fad1713)
 
 ## Sample Script
@@ -53,8 +53,8 @@ Source: [Set a Function as a webhook](https://www.twilio.com/docs/serverless/fun
 4. Add the same topic that is used in the Twilio Function and clik **Subscribe**. I added `sms2mqtt/messages/#`
    ![image](https://github.com/user-attachments/assets/886dbc51-dd0e-4114-8fcd-bca3e14dd406)
 5. Send a test text message to the Twilio Phone Number
-6. Monitor the Web Client
-   
+6. Monitor the Web Client and you should see a message come in for the subscribed topic
+   ![image](https://github.com/user-attachments/assets/f551b8ad-5f89-46ea-b74c-db628e11048b)
 
 # Resources
 * [Twilio Console](https://www.twilio.com/console/functions/overview)
