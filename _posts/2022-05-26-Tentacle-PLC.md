@@ -1,5 +1,5 @@
 ---
-tags: 'Open Source'
+tags: [Open Source]
 ---
 
 # Testing out Tentacle PLC
