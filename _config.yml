@@ -6,7 +6,10 @@ description: The goal of this blog is to help build my Automation Software Engin
 # Minima variables
 github_username:   aott33
 
-theme: "minima"
+# theme: minima
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
 
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
