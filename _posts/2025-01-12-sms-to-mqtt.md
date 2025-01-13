@@ -35,8 +35,9 @@ exports.handler = (context, event, callback) => {
 };
 ```
 
-# Set a Function as a webhook (Source: [Set a Function as a webhook](https://www.twilio.com/docs/serverless/functions-assets/quickstart/receive-sms#set-a-function-as-a-webhook))
-1. Twilio Console's [Phone Numbers page]((https://www.twilio.com/console/phone-numbers/incoming)
+# Set a Function as a webhook
+Source: [Set a Function as a webhook](https://www.twilio.com/docs/serverless/functions-assets/quickstart/receive-sms#set-a-function-as-a-webhook)
+1. Twilio Console's [Phone Numbers page](https://www.twilio.com/console/phone-numbers/incoming)
 2. Click on the phone number you'd like to have connected to your Function
 3. Navigate to **A Message Comes In option** under **Messaging**
 4. Select **Function** from the **A Message Comes In**
