@@ -1,11 +1,11 @@
-# SMS Alarm to Ignition - Part 1/2
+# How to Integrate SMS Alarms into Ignition (Part 1 of 2)
 ## Introduction
 This is a two part blog series walking through the steps to bring an sms alarm into Ignition and trigger an alarm. Part 1 (this post) will walk through the steps to get the incoming SMS into a broker using Twilio. Part 2 will walk through the steps to configure Ignition to read the message and trigger an alarm.
 
 ## Steps
 ### Prerequisites
-1. Create a Twilio account
-2. Create a virtual phone number
+1. Create a [Twilio account](https://www.twilio.com/try-twilio)
+2. Create a [virtual phone number](https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account-namer)
 
 ### Create and Deploy a Function
 1. Go to [Twilio Console](https://www.twilio.com/console/functions/overview)
