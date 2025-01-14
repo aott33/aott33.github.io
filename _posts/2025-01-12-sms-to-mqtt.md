@@ -21,7 +21,7 @@ This is a two part blog series walking through the steps to bring an sms alarm i
 
 ![image](https://github.com/user-attachments/assets/60e5548c-d44f-4443-81bf-e660ecc2d79f)
    
-4. When redirected to the new Service, click the **Add +** button and select **Add Function** from the dropdown and update function name
+3. When redirected to the new Service, click the **Add +** button and select **Add Function** from the dropdown and update function name
 ![image](https://github.com/user-attachments/assets/07458e62-e402-4d1b-8cef-6729f6a66b14)
 ![image](https://github.com/user-attachments/assets/39cd2618-a41b-406c-8b6f-9557b02c648b)
    
