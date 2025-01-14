@@ -77,7 +77,7 @@ Source: [Set a Function as a webhook](https://www.twilio.com/docs/serverless/fun
 	<table><tr><td>
 		<img src="https://github.com/user-attachments/assets/124f1e99-ba5a-43d8-a53b-295b9882a704"/>
 	</td></tr></table>
-4. Add the same topic that is used in the Twilio Function and clik **Subscribe**. I added `sms2mqtt/messages/#`
+4. Add the same topic (`sms2mqtt/messages/#`) that is used in the Twilio Function and clik **Subscribe**
 	<table><tr><td>
 		<img src="https://github.com/user-attachments/assets/886dbc51-dd0e-4114-8fcd-bca3e14dd406"/>
 	</td></tr></table>
