@@ -10,20 +10,21 @@ tags: Ignition
 ## Adding Number Keypad to Ignition Project
 1. Download the keypad from [here](https://inductiveautomation.com/exchange/2380/installation)
 2. Unzip download to access correct zip file
-	
- ![image10](https://github.com/user-attachments/assets/0e72774f-1098-4ef4-b734-519f16cb802c)
-
+	<table><tr><td>
+		<img src="https://github.com/user-attachments/assets/0e72774f-1098-4ef4-b734-519f16cb802c"/>
+	</td></tr></table>
 3. In Designer, select File > Import
-	
- ![image2](https://github.com/user-attachments/assets/c563183b-6bfd-455c-9679-fa880c16bd10)
-
+	<table><tr><td>
+		<img src="https://github.com/user-attachments/assets/c563183b-6bfd-455c-9679-fa880c16bd10"/>
+	</td></tr></table>
 4. In Open pop up, select the keypad.zip file and click open
-	
- ![image1](https://github.com/user-attachments/assets/9e590864-5606-4000-9d78-615070a5114f)
-
+	 <table><tr><td>
+		<img src="https://github.com/user-attachments/assets/9e590864-5606-4000-9d78-615070a5114f"/>
+	</td></tr></table>
 5. In Import pop up, Select all items and select Import
-	
- ![image6](https://github.com/user-attachments/assets/0c77542e-a000-439f-bf84-8bbade398a04)
+	<table><tr><td>
+		<img src="https://github.com/user-attachments/assets/0c77542e-a000-439f-bf84-8bbade398a04"/>
+	</td></tr></table>
 
 ## Creating popup
 1. Navigate to the view with the numeric entry field
@@ -31,15 +32,22 @@ tags: Ignition
 3. Setup custom properties
   - Select “Add Custom Property”
   - Select “Object” and type “keypad” all lowercase
-  - ![image8](https://github.com/user-attachments/assets/671443c0-ce60-4977-bf97-e6d5b7fd161e)
+		<table><tr><td>
+			<img src="https://github.com/user-attachments/assets/671443c0-ce60-4977-bf97-e6d5b7fd161e"/>
+		</td></tr></table>
   - Select “Add Object Members” and add the following items: title, units, centerScreen
-  - ![image7](https://github.com/user-attachments/assets/b5b14a87-87e0-4ee6-bbc6-4f8f7d0cacf9)
-
+		<table><tr><td>
+			<img src="https://github.com/user-attachments/assets/b5b14a87-87e0-4ee6-bbc6-4f8f7d0cacf9"/>
+		</td></tr></table>
 4. Setup the popup
   - Right click the numeric entry field and select “Configure Event” or type “ctrl + j”
-  - ![image5](https://github.com/user-attachments/assets/b092b445-6964-4f64-a7c3-453c3220a746)
+		<table><tr><td>
+			<img src="https://github.com/user-attachments/assets/b092b445-6964-4f64-a7c3-453c3220a746"/>
+		</td></tr></table>
   - Select Mouse Events > onMouseDown then click the plus icon and select “Script”
-  - ![image3](https://github.com/user-attachments/assets/414bff67-f0db-4a0a-8688-569abf3483ed)
+		<table><tr><td>
+			<img src="https://github.com/user-attachments/assets/414bff67-f0db-4a0a-8688-569abf3483ed"/>
+		</td></tr></table>
   - Paste the following script into Script field and select “OK”
     ```
       popParams = {'owner': self.meta.name, 'min': self.props.inputBounds.minimum, 'max': self.props.inputBounds.maximum, 'oldValue': self.props.value, 'units': self.custom.keypad.units}
