@@ -15,7 +15,7 @@ This is a two part blog series walking through the steps to bring an sms alarm i
 1. Go to [Twilio Console](https://www.twilio.com/console/functions/overview)
 2. [Create a Service](https://www.twilio.com/console/functions/overview/services), fill name field, and click **Next**
 <table><tr><td>
-    <img src="[/images/logo.png](https://github.com/user-attachments/assets/f862a478-0f86-4790-89c4-a2166ed07bd2)" />
+    <img src="https://github.com/user-attachments/assets/f862a478-0f86-4790-89c4-a2166ed07bd2" />
 </td></tr></table>
 ![image](https://github.com/user-attachments/assets/60e5548c-d44f-4443-81bf-e660ecc2d79f)
    
