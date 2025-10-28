@@ -5,7 +5,11 @@ title: Resume
 
 # Andrew Ott | Ignition Gold Certified
 
+---
+
 [![Email](https://img.shields.io/badge/Email-ott.andrew33%40gmail.com-red?style=flat-square&logo=gmail)](mailto:ott.andrew33@gmail.com)  [![GitHub](https://img.shields.io/badge/GitHub-aott33-181717?style=flat-square&logo=github)](https://github.com/aott33)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-andrewott33-0077B5?style=flat-square&logo=linkedin)](https://linkedin.com/in/andrewott33)
+
+---
 
 ## Professional Experience
 
