@@ -5,10 +5,9 @@ title: Resume
 
 # Andrew Ott | Ignition Gold Certified
 
-<button onclick="window.print()" style="padding: 10px 20px; background-color: #0366d6; color: white; border: none; border-radius: 5px; cursor: pointer; margin: 10px 0;">
+<button class="no-print" onclick="window.print()" style="padding: 10px 20px; background-color: #05668D; color: white; border: none; border-radius: 5px; cursor: pointer; margin: 10px 0;">
   Print Resume
 </button>
-<a href="https://raw.githubusercontent.com/aott33/aott33.github.io/main/resume.md">Download Markdown</a>
 
 [![Email](https://img.shields.io/badge/Email-ott.andrew33%40gmail.com-red?style=flat-square&logo=gmail)](mailto:ott.andrew33@gmail.com)  [![GitHub](https://img.shields.io/badge/GitHub-aott33-181717?style=flat-square&logo=github)](https://github.com/aott33)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-andrewott33-0077B5?style=flat-square&logo=linkedin)](https://linkedin.com/in/andrewott33)
 
