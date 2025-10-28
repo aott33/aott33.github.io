@@ -91,31 +91,46 @@ hr {
 
 /* Print styles for resume */
 @media print {
+  /* Hide navigation, header, footer, and UI elements */
+  .site-header,
+  .site-footer,
+  .site-nav,
   .no-print,
   nav,
-  .navbar,
   header,
   footer,
   button,
   .post_navi,
-  .copy-code-button {
+  .copy-code-button,
+  #share-buttons,
+  .page-link,
+  .trigger {
     display: none !important;
   }
   
-  /* Remove badges/shields */
+  /* Hide badge/shield images */
   img[src*="shields.io"],
-  img[src*="badge"] {
+  img[src*="badge"],
+  p > a > img {
     display: none !important;
   }
   
-  /* Optimize page for print */
+  /* Optimize page layout for print */
   body {
-    margin: 0;
-    padding: 20px;
+    margin: 0 !important;
+    padding: 20px !important;
     font-size: 11pt;
     line-height: 1.4;
-    color: black;
-    background: white;
+    color: black !important;
+    background: white !important;
+  }
+  
+  /* Remove wrapper constraints */
+  .wrapper,
+  .page-content {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   
   /* Prevent awkward page breaks */
@@ -128,19 +143,14 @@ hr {
     page-break-inside: avoid;
   }
   
-  /* Clean up links for print */
+  /* Clean up links */
   a {
     color: black;
     text-decoration: none;
   }
   
-  /* Optional: show URLs in parentheses after links */
-  /* Uncomment if you want this behavior */
-  /*
-  a[href^="http"]:after {
-    content: " (" attr(href) ")";
-    font-size: 9pt;
-    color: #666;
+  /* Remove any top padding/margins */
+  body > *:first-child {
+    margin-top: 0 !important;
   }
-  */
 }
