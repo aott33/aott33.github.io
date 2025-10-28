@@ -23,6 +23,7 @@ titles_from_headings:
   collections: true
 
 header_pages:
+  - resume.md
   - resources.md
   - archive.md
 
