@@ -1,3 +1,8 @@
+---
+layout: page
+title: Resume
+---
+
 # Andrew Ott - Gold Certified Ignition Developer
 
 **Contact:** [ott.andrew33@gmail.com](mailto:ott.andrew33@gmail.com)  
