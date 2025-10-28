@@ -88,3 +88,59 @@ hr {
     /* Avoid pushing up the copy buttons. */
     margin: 0;
 }
+
+/* Print styles for resume */
+@media print {
+  .no-print,
+  nav,
+  .navbar,
+  header,
+  footer,
+  button,
+  .post_navi,
+  .copy-code-button {
+    display: none !important;
+  }
+  
+  /* Remove badges/shields */
+  img[src*="shields.io"],
+  img[src*="badge"] {
+    display: none !important;
+  }
+  
+  /* Optimize page for print */
+  body {
+    margin: 0;
+    padding: 20px;
+    font-size: 11pt;
+    line-height: 1.4;
+    color: black;
+    background: white;
+  }
+  
+  /* Prevent awkward page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  
+  ul, ol {
+    page-break-inside: avoid;
+  }
+  
+  /* Clean up links for print */
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Optional: show URLs in parentheses after links */
+  /* Uncomment if you want this behavior */
+  /*
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+  }
+  */
+}
