@@ -3,8 +3,6 @@ layout: page
 title: Resources
 ---
 
-# Resources
-
 <details>
  <summary>API Resources</summary>
  <ul>
