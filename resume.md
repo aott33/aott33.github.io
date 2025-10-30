@@ -15,7 +15,7 @@ title: Resume
 ## Professional Experience
 
 ### Crossroad Energy Solutions, Remote
-**SCADA Developer** | *October 2024 – Present*
+**Lead SCADA Developer** | *October 2024 – Present*
 
 - Develop and maintain Ignition SCADA systems for upstream oil and gas operations
 - Design production dashboards, alarm management systems, and mobile interfaces for central tank batteries and saltwater disposal facilities
