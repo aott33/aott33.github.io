@@ -39,7 +39,6 @@ title: Resume
 ### Westmill Industries, Abbotsford, BC
 **Automation & Mechanical Design Specialist** | *October 2022 – March 2024*
 
-- Project management/lead designer for an $11MM project
 - Electrical and controls subject matter expert
 - Mechanical design using SOLIDWORKS
 - Assisted with optimizing business processes
