@@ -12,73 +12,82 @@ title: Resume
 
 ---
 
+### Professional Summary
+
+Ignition Gold Certified developer with cross-industry SCADA experience and multi-platform PLC experience (Allen-Bradley, Siemens, CODESYS). Design and implement Ignition SCADA solutions tailored to customer requirements.
+
+---
+
+### Technical Skills
+
+**Platforms & Languages:** Ignition SCADA (Gold Certified), Python, JavaScript, TypeScript, SQL (PostgreSQL, MySQL, MS SQL), Studio 5000, TIA Portal, CODESYS
+
+**Tools & Protocols:** Docker, MQTT, REST APIs, Git, SolidWorks
+
+**Operating Systems:** Linux, Windows
+
+---
+
 ### Professional Experience
 
 #### Crossroad Energy Solutions, Remote
 **Lead SCADA Developer** | *October 2024 – Present*
 
-- Develop and maintain Ignition SCADA systems for upstream oil and gas operations
-- Design production dashboards, alarm management systems, and mobile interfaces for central tank batteries and saltwater disposal facilities
-- Create comprehensive reporting systems with color-coded alerts and professional branding for facility monitoring
-- Build and optimize UDT structures for scalable data aggregation and alarming
-- Troubleshoot and resolve critical issues including SSL certificate renewals, Store and Forward syncing, and data integrity problems
-- Develop Python scripts within Ignition for automation workflows and custom functionality
-- Manage feature enhancement roadmap including production analytics and operational dashboards
+*Sectors: Oil & Gas*
+
+- Architect SCADA solution for 65 edge gateways across central tank batteries and saltwater disposal facilities
+- Optimized alarm management system, reducing load time from 30 seconds to instant response
+- Design scalable UDT structures for data aggregation and analytics using Ignition Perspective and Python
+
+#### AO Automation Ltd, Chilliwack, BC
+**Founder & Lead SCADA Developer** | *July 2022 – July 2025*
+
+*Sectors: Data Center (Ventilation), Manufacturing*
+
+- Established Ignition Gold Certified integration firm delivering PLC programming and SCADA development services
+- Achieved Top Rated Plus status (top 3% of talent) with 100% client satisfaction across 16 completed projects
 
 #### Foundation Controls, Chilliwack, BC
 **Industrial Automation Specialist** | *March 2024 – November 2024*
 
-- Programming various PLC, HMI and SCADA platforms (Siemens, Rockwell, Ignition)
-- Generation and maintenance of work instructions, SOPs, records, and design standards
+*Sectors: Food & Beverage, Agriculture, Industrial Equipment*
 
-#### AO Automation Ltd, Chilliwack, BC
-**Founder and Lead Developer** | *July 2022 – July 2024*
-
-- AO Automation is an Ignition Gold Certified Integrator that provides PLC programming and Ignition development services
+- Developed PLC, HMI, and SCADA solutions using Siemens TIA Portal, Rockwell Studio 5000, and Ignition
 
 #### Westmill Industries, Abbotsford, BC
 **Automation & Mechanical Design Specialist** | *October 2022 – March 2024*
 
-- Electrical and controls subject matter expert
-- Mechanical design using SOLIDWORKS
-- Assisted with optimizing business processes
+*Sectors: Wood Products, Building Materials Manufacturing*
+
+- Electrical and controls SME for industrial drying equipment (plywood veneer dryers, gypsum, fiberboard)
+- Performed mechanical design using SOLIDWORKS and developed integrated control solutions
 
 #### VES-Artex, Abbotsford, BC
-**Junior Software Developer** | *May 2020 – October 2022*
+**Junior Software Developer | Automation Technologist** | *May 2020 – October 2022*
 
-- Contributing member of the Digital Transformation Team
-- Helped lead the digital transformation maturity assessment (DTMA) to determine company's current state
-- Helped develop a configure, price, quote (CPQ) tool using JavaScript
+*Sectors: Agriculture (Dairy Ventilation)*
 
-**Automation Technologist**
+- Contributing member of Digital Transformation Team leading Industry 4.0 maturity assessment
+- Developed configure-price-quote (CPQ) tool using JavaScript and custom trouble ticket tracking system
+- Technical lead for innovative agricultural cooling product, interfacing with vendors to ensure specification compliance and conducting critical testing and quality validation
 
-- Electrical and controls professional on the engineering team
-  - Created a trouble ticket tracking system
-  - Configured and tuned Lenze i550 Protec Drives
-- Technical lead for a cutting edge cow cooling product
-  - Worked closely with the vendor to ensure that requests were being met
-  - Performed critical testing and quality checks
-
-#### JLL-Amazon, Tsawwassen, BC
+#### JLL - Amazon YVR4 Fulfillment Center, Tsawwassen, BC
 **Control Systems Technician** | *July 2019 – March 2020*
 
-- Performed quality checks of facility during the launch of Amazon's YVR4 Fulfillment center
-- Monitored material handling equipment (MHE) metrics
-- Partnered with facilities/operations to identify system issues
+*Sectors: Logistics, Warehouse Automation*
 
-#### Royal Canadian Air Force, Borden, ON
-**Avionics Systems Technician** | *March 2014 – August 2017*
-
-- Honorably discharged - apprenticeship training completed
-- Troubleshot, modified, installed and tested aircraft electrical systems
-- Inspected aircraft components including communications, navigation and auto-flight equipment
+- Performed quality assurance and system validation during facility launch of Amazon's YVR4 fulfillment center
+- Monitored material handling equipment (MHE) metrics and partnered with operations teams to resolve system issues
 
 ---
 
-### Education
+### Education & Certifications
+
+#### Ignition Gold Certification
+**Inductive Automation** | *Current*
 
 #### Boot.dev
-**Certificate: Back-end Developer** | *December 2023 – Present*
+**Certificate: Back-end Developer Pathway (In Progress)** | *December 2023 – Present*
 
 - Python, JavaScript, Go
 - Docker, CI/CD, Kubernetes
@@ -88,12 +97,7 @@ title: Resume
 
 - Ignition Vision and Perspective
 - MQTT and OPC UA
-- MySQL
-
-#### Thompson Rivers University
-**Certificate: Information Technology** | *July 2018 – March 2020*
-
-- Various information technology and computing courses
+- IIoT Architecture
 
 #### University of the Fraser Valley
 **Associate's Degree: Automation and Robotics Technician** | *September 2018 – June 2019*
@@ -101,30 +105,3 @@ title: Resume
 - Outstanding Achievement Award
 - Graduated with Distinction
 - Dean's List Fall 2018, Winter 2019
-
-#### University of the Fraser Valley
-**Certificate: Electronics Technician Common Core** | *September 2017 – June 2021*
-
-- Outstanding Achievement Award
-- Graduated with Distinction
-
-#### CAF School of Aerospace Technology and Engineering
-**Certificate: Avionics Systems Technician Apprentice Level** | *September 2015 – January 2017*
-
-- Trained to perform all tasks required of an Avionics Systems Technician
-- RCAF Core Values Award
-
-#### CAF School of Communications and Electronics
-**Certificate: Performance Oriented Electronics Training** | *January 2015 – August 2015*
-
-- Technological background theory for the Avionics Systems Technician Trade
-
----
-
-### Technical Skills
-
-**Languages/Platforms:** Python, JavaScript, SQL (PostgreSQL, MySQL), Ignition SCADA (Gold Certified), IEC 1131-3 PLC Programming Languages, TIA Portal, Studio 5000, CODESYS
-
-**Operating Systems:** Linux, Windows
-
-**Technical Tools:** Git, GitHub, VSCode
