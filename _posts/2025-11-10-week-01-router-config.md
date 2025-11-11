@@ -25,11 +25,7 @@ This week I laid the foundation of the home lab by configuring [OPNsense](https:
 - Configure Orbi WiFi mesh network in Access Point mode
 - Identify network improvements for future weeks
 
----
-
 > This post covers two key network components: OPNsense router configuration (WAN, LAN, firewall rules) and Orbi WiFi setup in Access Point mode, followed by performance testing and identified improvements.
-
----
 
 ## Network Topology
 
