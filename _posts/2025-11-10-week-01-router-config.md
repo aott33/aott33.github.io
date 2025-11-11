@@ -81,107 +81,24 @@ Most people assume configuring a firewall/router requires CCNA-level networking 
 
 The entire process took 15 minutes.
 
-### Step 1: Configure OPNsense WAN Interface
+### Quick Setup Summary
 
-**Note:** I set up OPNsense while my ISP's WiFi router was still running. To avoid IP conflicts, I changed OPNsense's LAN IP from the default `192.168.1.1/24` to `192.168.20.1/24` via console before accessing the web UI.
+**Note:** I set up OPNsense while my ISP's router was still running. To avoid IP conflicts, I changed OPNsense's LAN IP from `192.168.1.1/24` to `192.168.20.1/24` via console first.
 
-#### 1.1 Access OPNsense Web UI
+**The 5-step configuration:**
 
-1. Connect laptop to Fitlet3 LAN port via Ethernet (or to default LAN network)
-2. Open browser and navigate to: `https://192.168.20.1` (or `https://192.168.1.1` if using default)
-3. Login:
-   - **Username:** `root`
-   - **Password:** (set during installation)
+1. **Access Web UI:** Connect laptop to Fitlet3 LAN port, navigate to `https://192.168.20.1`, login as `root`
 
-#### 1.2 Run Initial Setup Wizard
+2. **Run Setup Wizard:** Configure hostname (`opnsense`), domain (`homelab.internal`), DNS servers (`8.8.8.8`, `8.8.4.4`), and time server (`pool.ntp.org`)
 
-1. **System > Wizard > Setup Wizard**
-2. **General Information:**
-   - Hostname: `opnsense`
-   - Domain: `homelab.internal`
-   - Primary DNS: `8.8.8.8` (Google DNS)
-   - Secondary DNS: `8.8.4.4`
-3. **Time Server:** `pool.ntp.org`
-4. **RFC1918 Networks:** Uncheck "Block RFC1918 Private Networks" (allows local network communication)
+3. **Configure WAN:** Set to DHCP (automatic IP from ISP), verify connectivity with ping test to `8.8.8.8`
 
-#### 1.3 Configure WAN Interface
+4. **Configure LAN:** Set static IP `192.168.20.1/24`, enable DHCP server with range `192.168.20.100-200`
 
-1. **Interfaces > WAN**
-2. **General Configuration:**
-   - **Enable:** ✓ Checked
-   - **IPv4 Configuration Type:** DHCP (Dynamic Host Configuration Protocol - automatic IP from ISP)
-   - **IPv6 Configuration Type:** None (unless your ISP provides IPv6)
-3. **DHCP Configuration:**
-   - **DHCP Hostname:** `opnsense-homelab`
-4. **Save** and **Apply Changes**
-
-#### 1.4 Verify WAN Connectivity
-
-1. **Interfaces > Overview**
-2. Verify WAN interface shows:
-   - **Status:** `up`
-   - **IPv4 Address:** (assigned by ISP)
-   - **Gateway:** (ISP gateway)
-3. **Diagnostics > Ping**
-   - Ping `8.8.8.8` to verify internet connectivity
-   - Should see replies with <50ms latency
-
-**Troubleshooting:**
-- If no IP address: Check physical cable connection to ISP modem
-- If no internet: Verify ISP modem is online and not in bridge mode
-- If gateway missing: Try rebooting ISP modem
+5. **Verify Firewall Defaults:** LAN allows all outbound traffic, WAN blocks all inbound (secure by default)
 
 <img alt="opn-sense-dashboard" src="https://github.com/user-attachments/assets/a1be5890-4ed6-4a36-b5ad-299e39ea41ea" />
 *OPNsense dashboard showing active WAN connection with ISP-assigned IP and internet connectivity*
-
----
-
-### Step 2: Configure LAN Interface
-
-#### 2.1 Set LAN Network
-
-1. **Interfaces > LAN**
-2. **General Configuration:**
-   - **Enable:** ✓ Checked
-   - **IPv4 Configuration Type:** Static IPv4
-   - **IPv4 Address:** `192.168.20.1/24`
-     - (This will be the IT VLAN gateway in Week 2)
-3. **Save** and **Apply Changes**
-
-**Note:** After applying, OPNsense web UI will move to `https://192.168.20.1`
-
-#### 2.2 Enable DHCP Server
-
-1. **Services > DHCPv4 > [LAN]**
-2. **Enable DHCP server on LAN interface:** ✓ Checked
-3. **Range:**
-   - **From:** `192.168.20.100`
-   - **To:** `192.168.20.200`
-4. **Save** and **Apply**
-
----
-
-### Step 3: Configure Basic Firewall Rules
-
-#### 3.1 Default LAN Rules (allow all outbound)
-
-1. **Firewall > Rules > LAN**
-2. Verify default rule exists:
-   - **Action:** Pass
-   - **Interface:** LAN
-   - **Source:** LAN net
-   - **Destination:** any
-   - **Description:** "Default allow LAN to any"
-
-**This rule allows all traffic from LAN to internet (temporary, will restrict in Week 2 with VLANs)**
-
-#### 3.2 WAN Rules (block all inbound)
-
-1. **Firewall > Rules > WAN**
-2. Verify no WAN rules are defined by default
-   - The interface should show: **"No WAN rules are currently defined. All incoming connections on this interface will be blocked until you add a pass rule."**
-
-**This is OPNsense's secure default (no rules means all incoming traffic from the internet is blocked)**
 
 ---
 
@@ -207,73 +124,23 @@ The Orbi can function as either a router (handles DHCP, routing, NAT) or an Acce
 
 This separation of concerns is crucial: **OPNsense = routing/firewall, Orbi = WiFi coverage only.**
 
-### Step 1: Configure Orbi in Access Point Mode
+### Quick Setup Summary
 
-#### 1.1 Connect to Orbi
+**The 4-step configuration:**
 
-1. Connect laptop to Orbi WiFi network (default SSID on label)
-2. Open browser and navigate to: `http://orbilogin.com` or `http://192.168.1.1`
-3. Login with default credentials (on router label)
+1. **Switch to AP Mode:** Connect to Orbi (`http://orbilogin.com`), navigate to **Advanced > Router/AP Mode**, select **AP Mode**, reboot (~2 minutes)
 
-#### 1.2 Switch to AP Mode
+2. **Reconfigure Network Settings:** After reboot, find Orbi's new IP in OPNsense DHCP leases, set static IP `192.168.20.3`, gateway `192.168.20.1`, configure WiFi SSID and password
 
-1. **Advanced > Advanced Setup > Router / AP Mode**
-2. Select **AP Mode**
-3. **Apply**
-4. Wait for Orbi to reboot (~2 minutes)
+3. **Position Satellites:** Place satellites 30-50 feet from main router, verify blue LED sync, reserve static IPs (`192.168.20.4`, `192.168.20.5`)
 
-**What this does:** Disables Orbi's routing and DHCP functions. It now only broadcasts WiFi.
+4. **Performance Testing:** Run speed test in Orbi web UI (~900 Mbps to router ✓), test WiFi speeds on phone at multiple locations (max ~150 Mbps ✗)
 
 <img alt="orbi-ap-mode" src="https://github.com/user-attachments/assets/fcf6d737-2b15-426d-a9fd-b6ceaf332778" />
-*Orbi configuration page showing Router/AP Mode selection - switching from Router mode to Access Point mode*
-
-#### 1.3 Reconfigure Orbi Network Settings
-
-After reboot, Orbi will be on OPNsense's LAN network (192.168.20.x):
-
-1. Find Orbi's new IP: **OPNsense > Services > DHCPv4 > Leases**
-2. Connect to Orbi via new DHCP IP
-3. **Settings > Network:**
-   - **Router IP:** `192.168.20.3` (static, reserved in OPNsense DHCP)
-   - **Subnet Mask:** `255.255.255.0`
-   - **Gateway:** `192.168.20.1` (OPNsense)
-4. **WiFi Settings:**
-   - **SSID:** `Example-SSID` (temporary, will split to VLANs in Week 2)
-   - **Security:** WPA2-PSK or WPA3
-   - **Password:** (strong password)
-5. **Save Settings**
-
-#### 1.4 Position Satellites for Mesh Coverage
-
-1. Place Orbi satellites ~30-50 feet from main router
-2. Power on satellites
-3. Wait for blue LED (successful sync with main router)
-4. Verify coverage in different areas of home
-5. Reserve Static IPs in OPNsense:
-   - **Satellite 1:** `192.168.20.4`
-   - **Satellite 2:** `192.168.20.5`
-
----
-
-### Step 2: Performance Testing
-
-#### 2.1 Speed Test at Router
-
-1. **Orbi Web UI > Internet Speed Test**
-2. Verify internet speed to router: ~900 Mbps ✓
+*Orbi configuration showing Router/AP Mode switch*
 
 <img alt="orbi-speed-test" src="https://github.com/user-attachments/assets/fbc0229b-c091-4825-86a8-8807db240437" />
-*Orbi web UI showing internet speed test results - ~900 Mbps connection to router confirmed*
-
-#### 2.2 Speed Test at Client Devices
-
-1. Walk through house with smartphone
-2. Test WiFi speed at key locations (bedroom, office, living room)
-3. **Google Speed Test** on phone
-
-**Results:** Max WiFi speed achieved: ~150 Mbps
-
-**Discovery:** Orbi RBK13 is WiFi 5, not WiFi 6. The hardware bottleneck limits clients to 150 Mbps even though the internet connection is 900 Mbps.
+*Speed test showing ~900 Mbps to router, but WiFi clients limited to ~150 Mbps due to WiFi 5 hardware*
 
 ---
 
@@ -335,6 +202,5 @@ VLANs are new territory for me, so expect some troubleshooting along the way. Fo
 **Related Homelab Docs:**
 - [Hardware: Fitlet3](../hardware/fitlet3-opnsense.md)
 - [Hardware: Network Topology](../hardware/network-topology.md)
-
 **Writing Framework:**
 - [The Algorithmic Framework for Writing Good Technical Articles](https://www.theocharis.dev/blog/algorithmic-framework-for-writing-technical-articles/)
