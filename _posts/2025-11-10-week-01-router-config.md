@@ -68,7 +68,10 @@ graph TB
     style Clients fill:#f0f0f0,stroke:#666,stroke-width:1px,color:#000
 ```
 
-*Red: Routing/Firewall layer | Blue: WiFi/Access Point layer | Yellow: Internet | Gray: Future components*
+*Red: Routing/Firewall layer*
+*Blue: WiFi/Access Point layer*
+*Yellow: Internet*
+*Gray: Future components*
 
 ---
 
