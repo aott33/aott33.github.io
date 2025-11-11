@@ -70,7 +70,7 @@ graph TB
 
 ## OPNsense Router Configuration is Simpler Than You Think
 
-Most people assume configuring a firewall/router requires CCNA-level networking knowledge. I assumed the same thing. But OPNsense's setup wizard walks you through the essentials: WAN (Wide Area Network - your internet connection), LAN (Local Area Network - your home network), DNS (Domain Name System - translates website names to IP addresses), and basic firewall rules.
+Not sure if you are in the same boat but I assumed configuring a firewall/router required expert level networking knowledge. But OPNsense's setup wizard walks you through the essentials: WAN (Wide Area Network - your internet connection), LAN (Local Area Network - your home network), DNS (Domain Name System - translates website names to IP addresses), and basic firewall rules.
 
 The entire process took 15 minutes.
 
