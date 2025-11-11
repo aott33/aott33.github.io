@@ -6,6 +6,8 @@ description: The goal of this blog is to help build my Automation Software Engin
 # Minima variables
 github_username:   aott33
 
+mermaid: true
+
 theme: minima
 minima:
   skin: dark
