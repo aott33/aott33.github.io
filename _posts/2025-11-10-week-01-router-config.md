@@ -8,8 +8,9 @@ tags: [Home Lab]
 **Week:** 1 of 16
 
 ---
+## Introduction
 
-When I completed the OPNsense setup wizard and successfully pinged 8.8.8.8 through my own router, I couldn't believe how straightforward it was. Years of assuming router configuration required advanced networking skills—gone in 15 minutes.
+When I completed the OPNsense setup wizard and successfully pinged 8.8.8.8 through my own router, I couldn't believe how straightforward it was. Years of assuming router configuration required advanced networking skills gone in 15 minutes.
 
 As a SCADA developer building my backend and DevOps skills, I need hands-on experience, not just theory. This 16-week homelab project builds that expertise while leveraging my OT/IT networking knowledge.
 
@@ -26,7 +27,7 @@ This week I laid the foundation of the home lab by configuring [OPNsense](https:
 
 ---
 
-This post covers two key network components: OPNsense router configuration (WAN, LAN, firewall rules) and Orbi WiFi setup in Access Point mode, followed by performance testing and identified improvements.
+> This post covers two key network components: OPNsense router configuration (WAN, LAN, firewall rules) and Orbi WiFi setup in Access Point mode, followed by performance testing and identified improvements.
 
 ---
 
