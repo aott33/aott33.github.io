@@ -16,7 +16,7 @@ As a SCADA developer building my backend and DevOps skills, I need hands-on expe
 
 ## Background & Context
 
-This is week 1 of a 16-week journey from beginner to expert in cloud-native IIoT infrastructure. I'm documenting everything so you can follow along—successes, mistakes, and lessons learned.
+This is week 1 of a 16-week journey documenting building my home lab. I'm documenting everything so you can follow along and so that I can demonstrate my skills.
 
 This week I laid the foundation of the home lab by configuring [OPNsense](https://opnsense.org/download/) on a [Fitlet3](https://fit-iot.com/web/products/fitlet3/) and setting up WiFi coverage using a [Netgear Orbi RBK13 Mesh WiFi system](https://www.netgear.com/ca-en/home/wifi/mesh/rbk13/). One of my core goals is building deeper networking knowledge, and setting up this foundation accomplishes that.
 
