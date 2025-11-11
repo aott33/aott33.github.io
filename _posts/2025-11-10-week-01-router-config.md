@@ -31,7 +31,7 @@ This week I laid the foundation of the home lab by configuring [OPNsense](https:
 
 Here's the network architecture we're building this week:
 
-```mermaid
+```
 graph TB
     Internet((Internet))
     ISP[ISP Modem/Router<br/>192.168.1.x]
