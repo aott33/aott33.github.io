@@ -175,11 +175,11 @@ The entire process took 15 minutes.
 2. Verify no WAN rules are defined by default
    - The interface should show: **"No WAN rules are currently defined. All incoming connections on this interface will be blocked until you add a pass rule."**
 
-**This is OPNsense's secure default—no rules means all incoming traffic from the internet is blocked.**
+**This is OPNsense's secure default (no rules means all incoming traffic from the internet is blocked)**
 
 ---
 
-That's it. From wizard to production-ready router in 15 minutes. The setup wizard handles DNS, DHCP, and secure firewall defaults—no specialized networking knowledge required. WAN blocks all inbound traffic, LAN allows outbound, and the router is ready for VLAN expansion in Week 2 (impossible with ISP routers).
+That's it. From wizard to production-ready router in 15 minutes. The setup wizard handles DNS, DHCP, and secure firewall defaults (no specialized networking knowledge required). WAN blocks all inbound traffic, LAN allows outbound, and the router is ready for VLAN expansion in Week 2 (impossible with ISP routers).
 
 I know what you're thinking: *"Why bother? My ISP router works fine."*
 
@@ -191,7 +191,7 @@ That's what I thought too. But ISP routers have critical limitations:
 
 The basic OPNsense config is just the starting point. It's easy to get running, then you expand with features as you need them.
 
-With routing and firewall secured, I needed WiFi coverage throughout the house. That's where the Orbi mesh system comes in—but configured as an Access Point, not a router.
+With routing and firewall secured, I needed WiFi coverage throughout the house. That's where the Orbi mesh system comes in, but configured as an Access Point, not a router.
 
 ---
 
@@ -275,13 +275,13 @@ The result? Full house coverage with 3 mesh nodes, no double-NAT issues, and sta
 
 Then I tested WiFi speeds on my phone. The max speed? 150 Mbps.
 
-I thought it was a configuration error. After testing 10 different locations throughout the house—bedroom, office, living room—reality set in: my gigabit internet was bottlenecked by 5-year-old WiFi 5 hardware. The Orbi RBK13 simply can't push more than 150 Mbps to clients.
+I thought it was a configuration error. After testing a few locations throughout the house (eg. bedroom, office, living room) I realized my gigabit internet was bottlenecked by 5-year-old WiFi 5 hardware. The Orbi RBK13 simply can't push more than 150 Mbps to clients.
 
 You might be wondering: *"Why use Orbi if you're building a professional homelab? Why not start with WiFi 6 from the beginning?"*
 
 Fair question. I already owned the Orbi RBK13 from my previous home where we had 150 Mbps internet. It worked perfectly there. I was unaware of its limitation until I set it up at the new home with 1 Gbps internet.
 
-But this is actually a valuable lesson: baseline testing reveals bottlenecks you didn't know existed. Working incrementally (use what you have, then upgrade) teaches you more than buying everything new upfront. This is why performance baselines matter—you can't improve what you don't measure.
+But this is actually a valuable lesson: baseline testing reveals bottlenecks you didn't know existed. Working incrementally (use what you have, then upgrade) teaches you more than buying everything new upfront.
 
 ---
 
@@ -289,7 +289,7 @@ But this is actually a valuable lesson: baseline testing reveals bottlenecks you
 
 Week 1 is complete. I configured OPNsense (WAN, LAN, DHCP, firewall rules) in 15 minutes, set up Orbi mesh WiFi in Access Point mode for whole-home coverage, and established a performance baseline that revealed a critical bottleneck: WiFi 5 limiting speeds to 150 Mbps despite 900 Mbps internet.
 
-Setting up OPNsense is easier than you think. If you've been intimidated by DIY routers, the setup wizard makes it approachable. From this basic foundation, you can expand with VLANs, VPN, IDS/IPS, and custom firewall rules—features impossible with ISP-provided routers.
+Setting up OPNsense is easier than you think. If you've been intimidated by DIY routers, the setup wizard makes it approachable. From this basic foundation, you can expand with VLANs, VPN, IDS/IPS, and custom firewall rules, features impossible with ISP-provided routers.
 
 **Three areas for improvement identified:**
 
