@@ -2,9 +2,9 @@
 tags: [Homelab]
 ---
 
-# Laying the Foundation - Homelab - Week 1
+# Laying the Foundation - Homelab
+**See the [Homelab GitHub Repo](https://github.com/aott33/iiot-kubernetes-homelab)**
 
-**Date:** 2025-11-10
 **Week:** 1 of 16
 
 ---
