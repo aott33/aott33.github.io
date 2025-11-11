@@ -63,7 +63,6 @@ graph TB
     Orbi_Sat2 --> Clients
 
     style OPN fill:#ff9999
-    style Switch fill:#ff9999
     style Orbi_Main fill:#99ccff
     style Orbi_Sat1 fill:#99ccff
     style Orbi_Sat2 fill:#99ccff
