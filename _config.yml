@@ -9,8 +9,6 @@ github_username:   aott33
 mermaid: true
 
 theme: minima
-minima:
-  skin: dark
 
 rss: rss
 
