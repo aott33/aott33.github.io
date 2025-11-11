@@ -95,23 +95,23 @@ The entire process took 15 minutes.
 
 ---
 
-That's it. From wizard to production-ready router in 15 minutes. The setup wizard handles DNS, DHCP, and secure firewall defaults (no specialized networking knowledge required). WAN blocks all inbound traffic, LAN allows outbound, and the router is ready for VLAN expansion in Week 2 (impossible with ISP routers).
+That's it. From wizard to production-ready router in 15 minutes. The setup wizard handles DNS, DHCP, and secure firewall defaults (no specialized networking knowledge required). WAN blocks all inbound traffic, LAN allows outbound, and the router is ready for VLAN expansion in Week 2. 
 
-I know what you're thinking: *"Why bother? My ISP router works fine."*
+Maybe you're thinking: *"Why bother? My ISP router works fine."*
 
 That's what I thought too. But ISP routers have critical limitations:
 - **No VLAN support:** Can't segment OT (industrial) from IT (personal) networks
 - **Limited firewall rules:** Can't create custom inter-VLAN rules
 - **Infrequent firmware updates:** Security patches can lag months behind
-- **No future expansion:** Can't add VPN, IDS/IPS, or custom services
+- **No future expansion:** Can't add VPN or custom services
 
-The basic OPNsense config is just the starting point. It's easy to get running, then you expand with features as you need them.
+The basic OPNsense configuration is just the starting point. It's easy to get running, then you expand with features as you need them.
 
 With routing and firewall secured, I needed WiFi coverage throughout the house. That's where the Orbi mesh system comes in, but configured as an Access Point, not a router.
 
 ---
 
-## WiFi Access Point Mode: Separating Routing from Radio
+## WiFi Access Point Mode
 
 The Orbi can function as either a router (handles DHCP, routing, NAT) or an Access Point (AP - just handles WiFi). Since OPNsense is already handling routing and DHCP, running Orbi in AP mode prevents double-NAT issues and keeps the network architecture clean.
 
@@ -137,17 +137,17 @@ This separation of concerns is crucial: **OPNsense = routing/firewall, Orbi = Wi
 
 ---
 
-The result? Full house coverage with 3 mesh nodes, no double-NAT issues, and static IPs for easier management. Internet to router clocked in at ~900 Mbps. Perfect.
+The result? Full house coverage with 3 mesh nodes, no double-NAT issues, and static IPs for easier management. Internet to router clocked in at ~900 Mbps.
 
 Then I tested WiFi speeds on my phone. The max speed? 150 Mbps.
 
-I thought it was a configuration error. After testing a few locations throughout the house (eg. bedroom, office, living room) I realized my gigabit internet was bottlenecked by 5-year-old WiFi 5 hardware. The Orbi RBK13 simply can't push more than 150 Mbps to clients.
+I thought it was a configuration error. After testing a few locations throughout the house (eg. bedroom, office, living room) I realized my gigabit internet was bottlenecked by 5-year-old WiFi 5 hardware. The Orbi RBK13 can't push more than 150 Mbps to clients.
 
 You might be wondering: *"Why use Orbi if you're building a professional homelab? Why not start with WiFi 6 from the beginning?"*
 
-Fair question. I already owned the Orbi RBK13 from my previous home where we had 150 Mbps internet. It worked perfectly there. I was unaware of its limitation until I set it up at the new home with 1 Gbps internet.
+Good question. I already owned the Orbi RBK13 from my previous home where we had 150 Mbps internet. It worked perfectly there. I was unaware of its limitation until I set it up at the new home with 1 Gbps internet.
 
-But this is actually a valuable lesson: baseline testing reveals bottlenecks you didn't know existed. Working incrementally (use what you have, then upgrade) teaches you more than buying everything new upfront.
+But this is a valuable lesson: baseline testing reveals bottlenecks you didn't know existed. Working incrementally (use what you have, then upgrade) teaches you more than buying everything new upfront.
 
 ---
 
