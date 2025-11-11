@@ -195,5 +195,6 @@ VLANs are new territory for me, so expect some troubleshooting along the way. Fo
 **Related Homelab Docs:**
 - [Hardware: Fitlet3](../hardware/fitlet3-opnsense.md)
 - [Hardware: Network Topology](../hardware/network-topology.md)
+
 **Writing Framework:**
 - [The Algorithmic Framework for Writing Good Technical Articles](https://www.theocharis.dev/blog/algorithmic-framework-for-writing-technical-articles/)
