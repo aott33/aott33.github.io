@@ -47,25 +47,28 @@ graph TB
     Clients[WiFi Clients<br/>DHCP: 192.168.20.100-200]
 
     Internet --> ISP
-    ISP -->|WAN: em0| OPN
-    OPN -->|LAN: em1| Orbi_Main
-    OPN -.->|Future Week 2| Switch
-    Switch -.->|Future Week 2| Orbi_Main
+    ISP --> OPN
+    OPN --> Orbi_Main
+    OPN -.-> Switch
+    Switch -.-> Orbi_Main
 
-    Orbi_Main -->|Mesh| Orbi_Sat1
-    Orbi_Main -->|Mesh| Orbi_Sat2
+    Orbi_Main --> Orbi_Sat1
+    Orbi_Main --> Orbi_Sat2
     Orbi_Main --> Clients
     Orbi_Sat1 --> Clients
     Orbi_Sat2 --> Clients
 
-    style OPN fill:#ff9999
-    style Orbi_Main fill:#99ccff
-    style Orbi_Sat1 fill:#99ccff
-    style Orbi_Sat2 fill:#99ccff
-    style Internet fill:#ffff99
+    style OPN fill:#ffcccc,stroke:#cc0000,stroke-width:2px,color:#000
+    style Switch fill:#f5f5f5,stroke:#999,stroke-width:2px,stroke-dasharray:5 5,color:#666
+    style Orbi_Main fill:#cce5ff,stroke:#0066cc,stroke-width:2px,color:#000
+    style Orbi_Sat1 fill:#cce5ff,stroke:#0066cc,stroke-width:2px,color:#000
+    style Orbi_Sat2 fill:#cce5ff,stroke:#0066cc,stroke-width:2px,color:#000
+    style Internet fill:#fff9e6,stroke:#ffa500,stroke-width:2px,color:#000
+    style ISP fill:#f5f5f5,stroke:#666,stroke-width:2px,color:#000
+    style Clients fill:#f0f0f0,stroke:#666,stroke-width:1px,color:#000
 ```
 
-*Red: Routing/Firewall layer | Blue: WiFi/Access Point layer | Yellow: Internet*
+*Red: Routing/Firewall layer | Blue: WiFi/Access Point layer | Yellow: Internet | Gray: Future components*
 
 ---
 
