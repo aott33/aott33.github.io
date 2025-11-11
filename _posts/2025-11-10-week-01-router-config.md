@@ -10,8 +10,6 @@ tags: [Homelab]
 ---
 ## Introduction
 
-When I completed the OPNsense setup wizard and successfully pinged 8.8.8.8 through my own router, I couldn't believe how straightforward it was. Years of assuming router configuration required advanced networking skills gone in 15 minutes.
-
 As a SCADA developer building my backend and DevOps skills, I need hands-on experience, not just theory. This 16-week homelab project builds that expertise while leveraging my OT/IT networking knowledge.
 
 ## Background & Context
