@@ -1,8 +1,8 @@
 ---
-tags: [Home Lab]
+tags: [Homelab]
 ---
 
-# Laying the Foundation - Home Lab - Week 1
+# Laying the Foundation - Homelab - Week 1
 
 **Date:** 2025-11-10
 **Week:** 1 of 16
@@ -16,9 +16,9 @@ As a SCADA developer building my backend and DevOps skills, I need hands-on expe
 
 ## Background & Context
 
-This is week 1 of a 16-week journey documenting my home lab building process. I'm documenting everything so you can follow along and so that I can demonstrate my skills.
+This is week 1 of a 16-week journey documenting my Homelab building process. I'm documenting everything so you can follow along and so that I can demonstrate my skills.
 
-This week I laid the foundation of the home lab by configuring [OPNsense](https://opnsense.org/download/) on a [Fitlet3](https://fit-iot.com/web/products/fitlet3/) and setting up WiFi coverage using a [Netgear Orbi RBK13 Mesh WiFi system](https://www.netgear.com/ca-en/home/wifi/mesh/rbk13/). One of my core goals is building deeper networking knowledge, and setting up this foundation accomplishes that.
+This week I laid the foundation of the Homelab by configuring [OPNsense](https://opnsense.org/download/) on a [Fitlet3](https://fit-iot.com/web/products/fitlet3/) and setting up WiFi coverage using a [Netgear Orbi RBK13 Mesh WiFi system](https://www.netgear.com/ca-en/home/wifi/mesh/rbk13/). One of my core goals is building deeper networking knowledge, and setting up this foundation accomplishes that.
 
 **This week's goals:**
 - Configure OPNsense router on Fitlet3
