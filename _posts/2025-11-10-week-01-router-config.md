@@ -18,11 +18,6 @@ This is week 1 of a 16-week journey documenting my Homelab building process. I'm
 
 This week I laid the foundation of the Homelab by configuring [OPNsense](https://opnsense.org/download/) on a [Fitlet3](https://fit-iot.com/web/products/fitlet3/) and setting up WiFi coverage using a [Netgear Orbi RBK13 Mesh WiFi system](https://www.netgear.com/ca-en/home/wifi/mesh/rbk13/). One of my core goals is building deeper networking knowledge, and setting up this foundation accomplishes that.
 
-**This week's goals:**
-- Configure OPNsense router on Fitlet3
-- Configure Orbi WiFi mesh network in Access Point mode
-- Identify network improvements for future weeks
-
 > This post covers two key network components: OPNsense router configuration (WAN, LAN, firewall rules) and Orbi WiFi setup in Access Point mode, followed by performance testing and identified improvements.
 
 ## Network Topology
