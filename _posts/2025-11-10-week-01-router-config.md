@@ -125,7 +125,7 @@ The entire process took 15 minutes.
 - If no internet: Verify ISP modem is online and not in bridge mode
 - If gateway missing: Try rebooting ISP modem
 
-![OPNsense Dashboard](../images/opn-sense-dashboard.png)
+<img width="1909" height="859" alt="opn-sense-dashboard" src="https://github.com/user-attachments/assets/a1be5890-4ed6-4a36-b5ad-299e39ea41ea" />
 *OPNsense dashboard showing active WAN connection with ISP-assigned IP and internet connectivity*
 
 ---
@@ -218,7 +218,7 @@ This separation of concerns is crucial: **OPNsense = routing/firewall, Orbi = Wi
 
 **What this does:** Disables Orbi's routing and DHCP functions. It now only broadcasts WiFi.
 
-![Orbi AP Mode Configuration](../images/orbi-ap-mode.png)
+<img width="890" height="543" alt="orbi-ap-mode" src="https://github.com/user-attachments/assets/fcf6d737-2b15-426d-a9fd-b6ceaf332778" />
 *Orbi configuration page showing Router/AP Mode selection - switching from Router mode to Access Point mode*
 
 #### 1.3 Reconfigure Orbi Network Settings
@@ -256,7 +256,7 @@ After reboot, Orbi will be on OPNsense's LAN network (192.168.20.x):
 1. **Orbi Web UI > Internet Speed Test**
 2. Verify internet speed to router: ~900 Mbps ✓
 
-![Orbi Speed Test](../images/orbi-speed-test.png)
+<img width="885" height="603" alt="orbi-speed-test" src="https://github.com/user-attachments/assets/fbc0229b-c091-4825-86a8-8807db240437" />
 *Orbi web UI showing internet speed test results - ~900 Mbps connection to router confirmed*
 
 #### 2.2 Speed Test at Client Devices
