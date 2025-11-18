@@ -13,7 +13,7 @@ tags: [Homelab]
 
 ## Introduction
 
-Most homelab guides treat all devices equally - laptops, servers, industrial sensors, all on the same network. That's a security nightmare for Industrial IoT applications.
+Most homelab guides treat all devices equally, laptops, servers, industrial sensors, all on the same network. That's a security nightmare for Industrial IoT applications.
 
 As a SCADA developer building my backend and DevOps skills, I need hands-on experience with production-grade network architecture, not just theory. This week I learned what VLANs actually are and implemented the same network segmentation approach used in manufacturing plants to protect industrial systems from ransomware and unauthorized access.
 
@@ -143,7 +143,7 @@ First, I created VLAN interfaces in OPNsense before touching the switch. This en
 <img alt="OPNsense VLAN Devices Configuration" src="https://raw.githubusercontent.com/aott33/iiot-kubernetes-homelab/main/docs/blog-posts/images/week-2-opnsense-vlan-devices-complete.png" />
 *OPNsense showing all three VLANs created on the LAN interface*
 
-**Critical concept:** OPNsense now has multiple IP addresses - one per VLAN. Devices on VLAN 10 use gateway `192.168.10.1`, devices on VLAN 20 use `192.168.20.1`, and management devices use `192.168.99.1`. The switch's VLAN tags tell OPNsense which interface to route traffic through.
+**Critical concept:** OPNsense now has multiple IP addresses, one per VLAN. Devices on VLAN 10 use gateway `192.168.10.1`, devices on VLAN 20 use `192.168.20.1`, and management devices use `192.168.99.1`. The switch's VLAN tags tell OPNsense which interface to route traffic through.
 
 ### 2. Cisco Switch VLAN Configuration (20 minutes)
 
@@ -151,11 +151,11 @@ Next, I configured the switch to segment ports into VLANs and create a trunk por
 
 **Steps:**
 1. Created VLAN database (VLAN 10, 20, 99)
-2. **Configured trunk port FIRST** (Port GE1 to OPNsense) - allows all VLANs to pass
+2. **Configured trunk port FIRST** (Port GE1 to OPNsense) allows all VLANs to pass
 3. Assigned access ports to VLANs:
-   - Ports 2-8: VLAN 20 (IT) - Orbi WiFi, PCs, laptops
-   - Ports 9-14: VLAN 10 (OT) - Raspberry Pis, future IIoT devices
-   - Ports 15-16: VLAN 99 (Management) - Switch management, UPS
+   - Ports 2-8: VLAN 20 (IT) Orbi WiFi, PCs, laptops
+   - Ports 9-14: VLAN 10 (OT) Raspberry Pis, future IIoT devices
+   - Ports 15-16: VLAN 99 (Management) Switch management, UPS
 4. Moved switch management IP from `192.168.20.2` to `192.168.99.10`
 
 <img alt="Cisco Switch VLAN Configuration" src="https://raw.githubusercontent.com/aott33/iiot-kubernetes-homelab/main/docs/blog-posts/images/week-2-cisco-vlan-mgt-vlan-settings-table-complete.png" />
@@ -168,25 +168,25 @@ Next, I configured the switch to segment ports into VLANs and create a trunk por
 Finally, I implemented firewall rules to enforce security isolation between VLANs.
 
 **OT VLAN (VLAN 10) Rules:**
-1. Allow MQTT (port 1883, 8883) to IT VLAN - for future EdgeX → UMH data flow
-2. Allow Kafka (port 9092) to IT VLAN - for future data pipelines
-3. **Block all other IT traffic** - prevents OT from accessing laptops/servers
-4. Allow outbound (internet) - for updates
+1. Allow MQTT (port 1883, 8883) to IT VLAN for future EdgeX → UMH data flow
+2. Allow Kafka (port 9092) to IT VLAN for future data pipelines
+3. **Block all other IT traffic** prevents OT from accessing laptops/servers
+4. Allow outbound (internet) for updates
 
 <img alt="OT VLAN Firewall Rules" src="https://raw.githubusercontent.com/aott33/iiot-kubernetes-homelab/main/docs/blog-posts/images/week-2-opnsense-ot-vlan-firewall-rules.png" />
-*OT VLAN firewall rules - specific ports allowed, general IT access blocked*
+*OT VLAN firewall rules (specific ports allowed, general IT access blocked)*
 
 **IT VLAN (VLAN 20) Rules:**
-1. **Block IT → OT** - most important rule for security
-2. Allow IT → Management - so I can access switch/UPS from WiFi
-3. Allow IT → Internet - full internet access
+1. **Block IT → OT** most important rule for security
+2. Allow IT → Management (so I can access switch/UPS from WiFi)
+3. Allow IT → Internet (full internet access)
 
 <img alt="IT VLAN Firewall Rules" src="https://raw.githubusercontent.com/aott33/iiot-kubernetes-homelab/main/docs/blog-posts/images/week-2-opnsense-it-vlan-firewall-rules.png" />
-*IT VLAN firewall rules - OT blocked, management and internet allowed*
+*IT VLAN firewall rules (OT blocked, management and internet allowed)*
 
 **Management VLAN (VLAN 99) Rules:**
-1. **Block internet access** (using `!RFC1918` alias) - security hardening
-2. Allow all local networks - can reach all VLANs for administration
+1. **Block internet access** (using `!RFC1918` alias) (security hardening)
+2. Allow all local networks (can reach all VLANs for administration)
 
 <img alt="Management VLAN Firewall Rules" src="https://raw.githubusercontent.com/aott33/iiot-kubernetes-homelab/main/docs/blog-posts/images/week-2-opnsense-mgt-vlan-firewall-rules.png" />
 *Management VLAN blocks public IPs (!RFC1918) while allowing private networks*
@@ -197,7 +197,7 @@ Finally, I implemented firewall rules to enforce security isolation between VLAN
 
 ## Testing VLAN Isolation
 
-After configuration, I ran a series of tests from my laptop (connected via WiFi on VLAN 20 - IT Network) to verify the firewall rules were working correctly.
+After configuration, I ran a series of tests from my laptop (connected via WiFi on VLAN 20 IT Network) to verify the firewall rules were working correctly.
 
 ### Test 1: IT VLAN to Internet (Should Work)
 ```powershell
@@ -236,7 +236,7 @@ I also tested from Management VLAN (connected via ethernet to Port 15) and OT VL
 **Management VLAN to Internet:** Blocked (RFC1918 rule working)
 **Management VLAN to All local VLANs:** Allowed (can administer infrastructure)
 **OT VLAN to IT VLAN:** Blocked (except MQTT/Kafka ports)
-**OT VLAN to Internet:** Allowed (for updates - can be blocked later for full air-gap)
+**OT VLAN to Internet:** Allowed (for updates can be blocked later for full air-gap)
 
 All tests passed. VLANs are properly isolated with firewall enforcement working as designed.
 
@@ -254,11 +254,11 @@ Week 2 is complete. I configured VLANs on both the Cisco CBS220 switch and OPNse
 
 **The biggest lesson: Plan before implementing**
 
-When the switch arrived, I powered it up immediately and started using it as a basic unmanaged switch on the flat `192.168.20.0/24` network. This created extra work later - I had to configure VLANs on both devices, migrate the switch from `192.168.20.2` to `192.168.99.10`, update DHCP reservations, and risk losing access.
+When the switch arrived, I powered it up immediately and started using it as a basic unmanaged switch on the flat `192.168.20.0/24` network. This created extra work later. I had to configure VLANs on both devices, migrate the switch from `192.168.20.2` to `192.168.99.10`, update DHCP reservations, and risk losing access.
 
-If I had planned first - configured VLANs in OPNsense, set up DHCP for Management VLAN, then connected and configured the switch - it would have gone straight to the Management VLAN with no migration needed.
+If I had planned first, it would have gone straight to the Management VLAN with no migration needed.
 
-But this "side quest" taught valuable lessons. I experienced both flat and segmented networks (not just theory), saw how devices migrate between subnets, troubleshot VLAN connectivity, and deeply understand DHCP across VLANs. **Infrastructure should be designed, not improvised** - but sometimes learning the hard way builds stronger understanding.
+But this "side quest" taught valuable lessons. I experienced both flat and segmented networks (not just theory), saw how devices migrate between subnets, troubleshot VLAN connectivity, and deeply understand DHCP across VLANs. **Infrastructure should be designed, not improvised**, but sometimes learning the hard way builds stronger understanding.
 
 **Three key takeaways:**
 
