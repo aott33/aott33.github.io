@@ -303,8 +303,6 @@ This is my first time deploying Kubernetes from scratch (not managed cloud K8s),
 **Homelab Repository:**
 - [Full Setup Guide - Week 2](https://github.com/aott33/iiot-kubernetes-homelab)
 
----
-
 | Previous Week | Next Week |
-|---|---|
+|:---|---:|
 | [OPNsense Router Setup](https://aott33.github.io/2025/11/10/week-01-router-config/) | K3s Control Plane (Coming Soon) |

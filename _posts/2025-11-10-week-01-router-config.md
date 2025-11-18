@@ -198,5 +198,5 @@ VLANs are new territory for me, so expect some troubleshooting along the way. Fo
 ---
 
 | Previous Week | Next Week |
-|---|---|
+|:---|---:|
 | - | [What the Heck are VLANs?](https://aott33.github.io/2025/11/17week-02-switch-config.html) |
