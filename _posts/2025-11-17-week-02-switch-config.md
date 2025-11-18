@@ -127,7 +127,7 @@ This follows ISA/IEC 62443 industrial security standards: defense in depth throu
 
 The configuration process had three main stages:
 
-### 1. OPNsense VLAN Configuration (30 minutes)
+### 1. OPNsense VLAN Configuration
 
 First, I created VLAN interfaces in OPNsense before touching the switch. This ensures OPNsense is ready to route VLAN traffic when the switch starts sending tagged frames.
 
@@ -145,7 +145,7 @@ First, I created VLAN interfaces in OPNsense before touching the switch. This en
 
 **Critical concept:** OPNsense now has multiple IP addresses, one per VLAN. Devices on VLAN 10 use gateway `192.168.10.1`, devices on VLAN 20 use `192.168.20.1`, and management devices use `192.168.99.1`. The switch's VLAN tags tell OPNsense which interface to route traffic through.
 
-### 2. Cisco Switch VLAN Configuration (20 minutes)
+### 2. Cisco Switch VLAN Configuration
 
 Next, I configured the switch to segment ports into VLANs and create a trunk port to carry all VLANs to OPNsense.
 
@@ -164,7 +164,7 @@ Next, I configured the switch to segment ports into VLANs and create a trunk por
 
 **Important:** Configuring the trunk port before assigning access ports prevents connectivity loss. The trunk carries VLAN-tagged traffic to OPNsense, which routes between VLANs based on firewall rules.
 
-### 3. Firewall Rules for OT/IT Segmentation (30 minutes)
+### 3. Firewall Rules for OT/IT Segmentation
 
 Finally, I implemented firewall rules to enforce security isolation between VLANs.
 
