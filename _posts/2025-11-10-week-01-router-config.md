@@ -173,7 +173,7 @@ Next week: VLAN segmentation with a Cisco CBS220 switch. Follow along!
 
 **Week 2: What the Heck are VLANs?**
 
-Next week I'm tackling VLAN (Virtual LAN) segmentation to separate OT and IT networks:
+This coming week I'm tackling VLAN (Virtual LAN) segmentation to separate OT and IT networks:
 
 1. **Cisco CBS220 Switch:** VLAN configuration (OT=VLAN 10, IT=VLAN 20, Management=VLAN 99)
 2. **OPNsense VLAN Interfaces:** Creating virtual interfaces for each VLAN
@@ -192,9 +192,11 @@ VLANs are new territory for me, so expect some troubleshooting along the way. Fo
 **Orbi Documentation:**
 - [Orbi Setup Guide](https://kb.netgear.com/25072/Setting-up-your-Orbi-WiFi-System-in-Access-Point-AP-Mode)
 
-**Related Homelab Docs:**
-- [Hardware: Fitlet3](../hardware/fitlet3-opnsense.md)
-- [Hardware: Network Topology](../hardware/network-topology.md)
-
 **Writing Framework:**
 - [The Algorithmic Framework for Writing Good Technical Articles](https://www.theocharis.dev/blog/algorithmic-framework-for-writing-technical-articles/)
+
+---
+
+| &nbsp; | &nbsp; |
+|---|---|
+| - | [Next Week: What the Heck are VLANs?](https://aott33.github.io/2025/11/17week-02-switch-config.html) |
