@@ -140,7 +140,7 @@ First, I created VLAN interfaces in OPNsense before touching the switch. This en
    - VLAN 99 (Management): `192.168.99.1/24`
 4. Enabled DHCP servers for each VLAN with appropriate IP ranges
 
-<img alt="OPNsense VLAN Devices Configuration" src="https://github.com/user-attachments/assets/cec1e355-1058-4009-8ef2-17778ca8dd7d" />
+<img alt="OPNsense VLAN Devices Configuration" src="https://github.com/user-attachments/assets/95d9ded9-5e51-4294-858e-eaeba8e140eb" />
 *OPNsense showing all three VLANs created on the LAN interface*
 
 **Critical concept:** OPNsense now has multiple IP addresses, one per VLAN. Devices on VLAN 10 use gateway `192.168.10.1`, devices on VLAN 20 use `192.168.20.1`, and management devices use `192.168.99.1`. The switch's VLAN tags tell OPNsense which interface to route traffic through.
@@ -159,6 +159,7 @@ Next, I configured the switch to segment ports into VLANs and create a trunk por
 4. Moved switch management IP from `192.168.20.2` to `192.168.99.10`
 
 <img alt="Cisco Switch VLAN Configuration" src="https://github.com/user-attachments/assets/a5982c59-2a7c-4f34-a5c4-1450dac19ae2" />
+
 *Cisco CBS220 switch VLAN table showing all configured VLANs*
 
 **Important:** Configuring the trunk port before assigning access ports prevents connectivity loss. The trunk carries VLAN-tagged traffic to OPNsense, which routes between VLANs based on firewall rules.
@@ -173,7 +174,7 @@ Finally, I implemented firewall rules to enforce security isolation between VLAN
 3. **Block all other IT traffic** prevents OT from accessing laptops/servers
 4. Allow outbound (internet) for updates
 
-<img alt="OT VLAN Firewall Rules" src="https://github.com/user-attachments/assets/09e2f9a4-91c6-4925-ad64-850b3781687a" />
+<img alt="OT VLAN Firewall Rules" src="https://github.com/user-attachments/assets/7c9ca1ca-d5a5-4236-b0be-aab41f04f68e" />
 *OT VLAN firewall rules (specific ports allowed, general IT access blocked)*
 
 **IT VLAN (VLAN 20) Rules:**
@@ -181,14 +182,14 @@ Finally, I implemented firewall rules to enforce security isolation between VLAN
 2. Allow IT → Management (so I can access switch/UPS from WiFi)
 3. Allow IT → Internet (full internet access)
 
-<img alt="IT VLAN Firewall Rules" src="https://github.com/user-attachments/assets/1c9b19b0-2d5c-4808-8ec6-127530fc62be" />
+<img alt="IT VLAN Firewall Rules" src="https://github.com/user-attachments/assets/7e66f497-874a-4168-8d10-f6213e0042af" />
 *IT VLAN firewall rules (OT blocked, management and internet allowed)*
 
 **Management VLAN (VLAN 99) Rules:**
 1. **Block internet access** (using `!RFC1918` alias) (security hardening)
 2. Allow all local networks (can reach all VLANs for administration)
 
-<img alt="Management VLAN Firewall Rules" src="https://github.com/user-attachments/assets/d13df9b9-fe19-4e0a-9796-f24857e995cc" />
+<img alt="Management VLAN Firewall Rules" src="https://github.com/user-attachments/assets/e2ac8c12-bff8-4943-8eab-91db4868a908" />
 *Management VLAN blocks public IPs (!RFC1918) while allowing private networks*
 
 **Critical lesson:** Firewall rules are processed top-to-bottom, **first match wins**. Specific rules (block IT → OT) must come before general rules (allow IT → internet), otherwise the general rule matches first and the block never triggers.
