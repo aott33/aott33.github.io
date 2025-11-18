@@ -194,9 +194,3 @@ VLANs are new territory for me, so expect some troubleshooting along the way. Fo
 
 **Writing Framework:**
 - [The Algorithmic Framework for Writing Good Technical Articles](https://www.theocharis.dev/blog/algorithmic-framework-for-writing-technical-articles/)
-
----
-
-| Previous Week | Next Week |
-|:---|---:|
-| - | [What the Heck are VLANs?](https://aott33.github.io/2025/11/17/week-02-switch-config.html) |
