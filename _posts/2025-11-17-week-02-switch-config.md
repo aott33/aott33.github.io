@@ -13,7 +13,7 @@ tags: [Homelab]
 
 ## Introduction
 
-Most homelab guides treat all devices equally, laptops, servers, industrial sensors, all on the same network. That's a security nightmare for Industrial IoT applications.
+In the past I treated all devices equally, laptops, servers, industrial sensors, all on the same network. That's a security nightmare for Industrial IoT applications.
 
 As a SCADA developer building my backend and DevOps skills, I need hands-on experience with production-grade network architecture, not just theory. This week I learned what VLANs actually are and implemented the same network segmentation approach used in manufacturing plants to protect industrial systems from ransomware and unauthorized access.
 
