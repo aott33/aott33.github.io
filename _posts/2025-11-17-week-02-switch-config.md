@@ -71,7 +71,14 @@ graph TB
     style Clients fill:#f0f0f0,stroke:#666,stroke-width:1px,color:#000
 ```
 
-*Red: Routing/Firewall* | *Green: Switch/VLANs* | *Blue: IT Network (VLAN 20)* | *Orange: OT Network (VLAN 10)* | *Purple: Management (VLAN 99)*
+*Red: Routing/Firewall* <br>
+*Green: Switch/VLANs* <br>
+*Blue: IT Network (VLAN 20)* <br>
+*Orange: OT Network (VLAN 10)* <br>
+*Purple: Management (VLAN 99)* <br>
+
+<img alt="Server Rack with Networking Equipment" src="https://raw.githubusercontent.com/aott33/iiot-kubernetes-homelab/main/docs/blog-posts/images/week-2-server_rack.jpg" />
+*Server rack with Cisco CBS220 switch, OPNsense Fitlet3, and Orbi WiFi mesh system mounted and ready for VLAN configuration*
 
 ---
 
@@ -298,6 +305,6 @@ This is my first time deploying Kubernetes from scratch (not managed cloud K8s),
 
 ---
 
-| &nbsp; | &nbsp; |
+| Previous Week | Next Week |
 |---|---|
-| [Previous Week: OPNsense Router Setup](https://aott33.github.io/2025-11-10-week-01-router-config/) | Next Week: K3s Control Plane (Coming Soon) |
+| [OPNsense Router Setup](https://aott33.github.io/2025/11/10/week-01-router-config/) | K3s Control Plane (Coming Soon) |
