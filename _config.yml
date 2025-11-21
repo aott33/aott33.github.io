@@ -12,7 +12,7 @@ timezone: America/Vancouver
 # jekyll-seo-tag settings
 # https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: "Learning in Public"
+title: "Learn in Public"
 tagline: "Building SASE skills through hands-on projects"
 
 description: >-
@@ -35,7 +35,7 @@ social:
     - https://www.linkedin.com/in/andrewott33
 
 # Avatar (optional - add path to your avatar image)
-avatar: /assets/img/avatar.svg
+avatar: /assets/img/avatar.png
 
 # Comments system configuration (Utterances - migrated from old config)
 comments:
