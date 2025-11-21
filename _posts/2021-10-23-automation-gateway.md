@@ -1,8 +1,11 @@
 ---
-tags: [Open Source]
+title: "Frankenstein Automation Gateway Test"
+date: 2021-10-23 00:00:00 -0400
+categories: [IIoT, Open Source]
+tags: [opc-ua, mqtt, graphql, docker, automation-gateway]
+description: "Testing the Frankenstein Automation Gateway to access OPC UA server data via MQTT and GraphQL"
+toc: true
 ---
-
-# Frankenstein Automation Gateway Test
 
 ## Table of Contents  
 - [Introduction](#introduction)  

@@ -1,8 +1,12 @@
 ---
-tags: [Homelab]
+title: "Laying the Foundation"
+date: 2025-11-10 00:00:00 -0500
+categories: [Homelab, Networking]
+tags: [opnsense, networking, homelab, wifi, router, firewall]
+description: "Week 1 of 16: Configuring OPNsense router and Orbi mesh WiFi to establish the homelab foundation for Kubernetes and IIoT projects"
+toc: true
+mermaid: true
 ---
-
-# Laying the Foundation - Homelab
 **See the [Homelab GitHub Repo](https://github.com/aott33/iiot-kubernetes-homelab)**
 
 **Week:** 1 of 16
@@ -191,6 +195,9 @@ VLANs are new territory for me, so expect some troubleshooting along the way. Fo
 
 **Orbi Documentation:**
 - [Orbi Setup Guide](https://kb.netgear.com/25072/Setting-up-your-Orbi-WiFi-System-in-Access-Point-AP-Mode)
+
+**Homelab Repository:**
+- [Homelab Repo](https://github.com/aott33/iiot-kubernetes-homelab)
 
 **Writing Framework:**
 - [The Algorithmic Framework for Writing Good Technical Articles](https://www.theocharis.dev/blog/algorithmic-framework-for-writing-technical-articles/)

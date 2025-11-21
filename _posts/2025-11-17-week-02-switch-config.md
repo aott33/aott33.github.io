@@ -1,8 +1,13 @@
 ---
-tags: [Homelab]
+title: "What the heck are VLANs?"
+date: 2025-11-17 00:00:00 -0500
+categories: [Homelab, Networking]
+tags: [vlans, networking, opnsense, cisco, homelab, security, firewall]
+description: "Week 2 of 16: Implementing VLAN segmentation with Cisco CBS220 switch and OPNsense to separate OT and IT networks for industrial security"
+toc: true
+mermaid: true
 ---
 
-# What the heck are VLANs? - Homelab
 ## Network Segmentation for OT/IT Security
 
 **See the [Homelab GitHub Repo](https://github.com/aott33/iiot-kubernetes-homelab)**
@@ -302,7 +307,7 @@ This is my first time deploying Kubernetes from scratch (not managed cloud K8s),
 - [RFC 1918 - Address Allocation for Private Internets](https://datatracker.ietf.org/doc/html/rfc1918)
 
 **Homelab Repository:**
-- [Full Setup Guide - Week 2](https://github.com/aott33/iiot-kubernetes-homelab)
+- [Homelab Repo](https://github.com/aott33/iiot-kubernetes-homelab)
 
 **Writing Framework:**
 - [The Algorithmic Framework for Writing Good Technical Articles](https://www.theocharis.dev/blog/algorithmic-framework-for-writing-technical-articles/)

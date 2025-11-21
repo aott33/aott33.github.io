@@ -1,8 +1,11 @@
 ---
-tags: Ignition
+title: "Integrate SMS Alarms into Ignition"
+date: 2025-01-12 00:00:00 -0500
+categories: [SCADA, Ignition]
+tags: [ignition, twilio, mqtt, sms, scada, alarms]
+description: "Part 1: Using Twilio and MQTT to bring SMS alarms into Ignition SCADA for real-time notifications"
+toc: true
 ---
-
-# Integrate SMS Alarms into Ignition
 ## Introduction
 This is a two part blog series walking through the steps to bring an sms alarm into Ignition and trigger an alarm. Part 1 (this post) will walk through the steps to get the incoming SMS into a broker using Twilio. Part 2 will walk through the steps to configure Ignition to read the message and trigger an alarm.
 

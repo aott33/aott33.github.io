@@ -1,8 +1,11 @@
 ---
-tags: Ignition
+title: "Perspective Keypad Instructions"
+date: 2024-07-25 00:00:00 -0400
+categories: [SCADA, Ignition]
+tags: [ignition, perspective, keypad, hmi, scada]
+description: "Step-by-step guide to adding and configuring number keypads in Ignition Perspective for HMI applications"
+toc: true
 ---
-
-# Perspective Keypad Instructions
 
 <video width="100%" src="https://github.com/user-attachments/assets/38f469f8-0fd3-49f7-b0ba-75ebc349f242" controls="controls">
 </video>

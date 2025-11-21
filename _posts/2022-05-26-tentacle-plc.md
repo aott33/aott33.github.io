@@ -1,8 +1,11 @@
 ---
-tags: [Open Source]
+title: "Testing out Tentacle PLC"
+date: 2022-05-26 00:00:00 -0400
+categories: [IIoT, Open Source]
+tags: [tentacle-plc, javascript, soft-plc, graphql, mqtt, docker]
+description: "Hands-on testing of Tentacle PLC: a modern soft PLC runtime with JavaScript logic and GraphQL API capabilities"
+toc: true
 ---
-
-# Testing out Tentacle PLC
 
 ## Table of Contents  
 - [Introduction](#introduction)  
