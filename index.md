@@ -1,4 +1,0 @@
-## Home
----
-{{site.description}}
-
