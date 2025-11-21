@@ -35,7 +35,7 @@ social:
     - https://www.linkedin.com/in/andrewott33
 
 # Avatar (optional - add path to your avatar image)
-avatar: /assets/img/avatar.png
+avatar: /assets/img/avatar.svg
 
 # Comments system configuration (Utterances - migrated from old config)
 comments:
