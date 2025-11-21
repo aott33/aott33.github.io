@@ -1,2 +1,15 @@
 _site
 .claude
+.bmad-core
+
+# Chirpy theme specific
+Gemfile.lock
+*.gem
+.bundle
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# Backup files
+*.backup
