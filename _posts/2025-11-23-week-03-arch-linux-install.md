@@ -515,7 +515,7 @@ Follow along as we finally get to the Kubernetes part of this Kubernetes homelab
 - [YouTube: Arch Linux Installation Tutorial](https://www.youtube.com/watch?v=FxeriGuJKTM): Good tutorial
 
 **Troubleshooting Resources:**
-- [MSI Motherboard Boot Issue](https://bugs.archlinux.org/task/70408): UEFI boot quirks
+- [MSI Motherboard Boot Issue](https://bbs.archlinux.org/viewtopic.php?id=283707): UEFI boot quirks
 - [GitHub: PiKVM FSTAB Issue](https://github.com/pikvm/pikvm/issues/709): Helped diagnose mount problems
 
 **Homelab Repository:**
