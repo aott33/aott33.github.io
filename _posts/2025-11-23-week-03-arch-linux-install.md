@@ -101,7 +101,7 @@ I started with what seemed like a reasonable approach: follow a YouTube tutorial
 
 The tutorial was detailed and professional. It covered disk encryption, LVM volume groups, and bootloader configuration. Perfect for a production system that would run Kubernetes infrastructure, right?
 
-**The installation steps I followed:**
+**Main Installation Steps**
 1. Created bootable USB with Arch ISO
 2. Partitioned disk with encrypted LVM (following tutorial)
 3. Installed base system with `pacstrap`
@@ -113,13 +113,13 @@ The tutorial was detailed and professional. It covered disk encryption, LVM volu
 
 **What happened:** The system booted directly into the MSI BIOS, completely bypassing the hard drive.
 
-### Problem 1: MSI Motherboard UEFI Quirk
+### Problem: MSI Motherboard UEFI Quirk
 
 My first thought was the bootloader didn't install correctly. After searching, I discovered MSI motherboards have a known quirk: they ignore custom UEFI boot entries and only boot from the fallback path `/EFI/BOOT/BOOTX64.EFI`.
 
 The solution: Install GRUB with the `--removable` flag.
 
-```bash
+```shell
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB --removable
 ```
 
@@ -135,7 +135,7 @@ But selecting "Arch Linux" from the menu resulted in a blank screen with error m
 
 With GRUB working, the next challenge was getting the system to actually boot. The error messages revealed the core issue (Not exact message):
 
-```
+```shell
 [ TIME ] Timed out waiting for device /dev/mapper/volgroup0-lv_root
 [ DEPEND ] Dependancy failed for File System mk on /dev/mapper/volgroup0-lv_root
 [ DEPEND ] Dependancy failed for /sysroot
@@ -202,7 +202,7 @@ Here's the condensed version of what actually worked:
 
 ### 1. Partition the Disk
 
-```bash
+```shell
 fdisk /dev/nvme0n1
 
 # Commands entered:
@@ -231,7 +231,7 @@ w         # Write changes
 
 ### 2. Format and Mount
 
-```bash
+```shell
 # Format partitions
 mkfs.fat -F32 /dev/nvme0n1p1
 mkswap /dev/nvme0n1p2
@@ -251,7 +251,7 @@ mount /dev/nvme0n1p1 /mnt/boot
 
 ### 3. Install Base System
 
-```bash
+```shell
 pacstrap -K /mnt base linux linux-firmware linux-headers linux-lts linux-lts-headers
 
 # Generate fstab
@@ -265,7 +265,7 @@ The `-U` flag uses UUIDs instead of device names, which is more reliable if disk
 
 ### 4. Configure System
 
-```bash
+```shell
 # Chroot into new system
 arch-chroot /mnt
 
@@ -302,7 +302,7 @@ systemctl enable NetworkManager
 
 ### 5. Install Bootloader (MSI-Compatible)
 
-```bash
+```shell
 # Install GRUB with --removable flag for MSI motherboards
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB --removable
 
@@ -315,7 +315,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 ### 6. Reboot
 
-```bash
+```shell
 exit
 umount /mnt/boot
 umount /mnt
@@ -334,7 +334,7 @@ Success! Well, almost.
 
 The system booted to TTY1 (text login) instead of the graphical GNOME login screen (GDM). After logging in, I checked the status:
 
-```bash
+```shell
 systemctl status gdm
 # Output: loaded (disabled; preset: disabled)
 #         Active: inactive (dead)
@@ -343,7 +343,7 @@ systemctl status gdm
 GDM wasn't enabled, even though I ran `systemctl enable gdm` during installation.
 
 **The fix:**
-```bash
+```shell
 sudo systemctl enable gdm
 sudo systemctl start gdm
 ```
@@ -361,7 +361,7 @@ Well, almost done. After logging into the GNOME desktop, I discovered a few conf
 Even though I ran `locale-gen` during installation, the `/etc/locale.conf` file wasn't being read properly.
 
 **The fix:**
-```bash
+```shell
 # Regenerate locales
 sudo locale-gen
 
@@ -375,7 +375,7 @@ localectl status
 I assumed setting the timezone during installation would persist, but checking the system time revealed it was using UTC:
 
 **The fix:**
-```bash
+```shell
 # Set timezone (adjust for your region)
 sudo ln -sf /usr/share/zoneinfo/Canada/Pacific /etc/localtime
 
