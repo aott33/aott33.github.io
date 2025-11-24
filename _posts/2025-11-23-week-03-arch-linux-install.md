@@ -18,7 +18,7 @@ mermaid: true
 
 This week was supposed to be about Kubernetes. It became a masterclass in Arch Linux installation troubleshooting instead.
 
-I spent hours debugging an encrypted Arch Linux installation that refused to boot and ultimately learned that sometimes the best path forward is knowing when to start over with a simpler approach.
+I spent hours debugging an encrypted Arch Linux installation that refused to boot and learned to follow the recommended installation guide.
 
 ## Background & Context
 
@@ -26,7 +26,7 @@ This is week 3 of a 16-week journey documenting my Homelab building process. Wee
 
 **Hardware obstacle:** My gaming PC wouldn't power on this week. It tripped the circuit breaker immediately on startup, indicating a power supply or motherboard fault. Rather than delay the project for hardware troubleshooting, I pivoted to using my business PC as the K3s control plane instead.
 
-Before starting this week, I had never installed Arch Linux. I'd used Ubuntu and other Debian-based distros, but Arch's manual installation process was new territory. I chose Arch because of the learning opportunity, it's the foundation for the K3s control plane that will run my IIoT platforms.
+Before starting this week, I had never installed Arch Linux. I'd used Ubuntu and other Debian-based distros, but Arch's manual installation process was new to me. I chose Arch because of the learning opportunity, it's the foundation for the K3s control plane that will run my IIoT platforms.
 
 **This week's goals:**
 1. Install Arch Linux on Business PC (IP: 192.168.20.10)
@@ -99,9 +99,9 @@ graph TB
 
 I started with what seemed like a reasonable approach: follow a YouTube tutorial for Arch Linux installation. I found [this video](https://www.youtube.com/watch?v=FxeriGuJKTM) that walked through an encrypted installation with LVM.
 
-The tutorial was detailed and professional. It covered disk encryption, LVM volume groups, and bootloader configuration. Perfect for a production system that would run Kubernetes infrastructure, right?
+The tutorial was detailed and professional. It covered disk encryption, LVM, and bootloader configuration. I thought this would be the ideal approach even though I read in forums to just follow the Installation Wiki.
 
-**Main Installation Steps**
+**Main Installation Steps I followed**
 1. Created bootable USB with Arch ISO
 2. Partitioned disk with encrypted LVM (following tutorial)
 3. Installed base system with `pacstrap`
@@ -113,9 +113,7 @@ The tutorial was detailed and professional. It covered disk encryption, LVM volu
 
 **What happened:** The system booted directly into the MSI BIOS, completely bypassing the hard drive.
 
-### Problem: MSI Motherboard UEFI Quirk
-
-My first thought was the bootloader didn't install correctly. After searching, I discovered MSI motherboards have a known quirk: they ignore custom UEFI boot entries and only boot from the fallback path `/EFI/BOOT/BOOTX64.EFI`.
+My first thought was the bootloader didn't install correctly and followed the video again and reinstalled the Arch Linux. After searching, I discovered MSI motherboards have a known quirk: they ignore custom UEFI boot entries and only boot from the fallback path `/EFI/BOOT/BOOTX64.EFI`.
 
 The solution: Install GRUB with the `--removable` flag.
 
@@ -150,7 +148,7 @@ See sulogin(8) man page for more detauls
 Press Enter to Continue
 ```
 
-The system couldn't find the encrypted root partition. This meant the initramfs (initial ramdisk) wasn't properly configured to unlock the LUKS encryption at boot.
+The system couldn't find the encrypted root partition.
 
 I went through the install again and followed the tutorial exactly and it still ended with a blank screen and then timeout error. I tried many things based on the forums and ended up in the same spot. I must have missed a key configuration somewhere.
 
@@ -348,13 +346,13 @@ sudo systemctl enable gdm
 sudo systemctl start gdm
 ```
 
-The screen immediately switched to the graphical GNOME login. **Now it was truly done.**
+The screen immediately switched to the graphical GNOME login.
 
 ---
 
 ## Post-Installation Configuration Gotchas
 
-Well, almost done. After logging into the GNOME desktop, I discovered a few configuration items that didn't carry over from the chroot environment.
+After logging into the GNOME desktop, I discovered a few configuration items that didn't carry over from the chroot environment.
 
 ### Missing Locale Configuration
 
@@ -387,9 +385,7 @@ timedatectl
 # Time zone: America/Vancouver (PST, -0800)
 ```
 
-**Lesson learned:** Configuration done in the chroot environment doesn't always persist exactly as expected. After first boot, verify critical settings like locale, timezone, and network configuration.
-
-These weren't show-stoppers, but they remind you that a "working" installation isn't the same as a "fully configured" installation. Always test and verify after the first boot.
+**Lesson learned:** After first boot, verify critical settings like locale, timezone, and network configuration. Always test and verify after the first boot.
 
 **Note:** The Arch Wiki has a comprehensive [General Recommendations](https://wiki.archlinux.org/title/General_recommendations) page covering system administration tasks after installation. It includes security hardening, user management, network configuration, and performance optimization. Worth reviewing before deploying production workloads.
 
@@ -468,13 +464,13 @@ Why does MSI require the `--removable` flag? What's the difference between UEFI 
 
 ---
 
-These gaps won't block K3s deployment, but filling them will make me more effective at troubleshooting when (not if) things break. The Arch Wiki will be my companion for these deep dives.
+These gaps won't block K3s deployment, but filling them will make me more effective at troubleshooting when things break. The Arch Wiki will be my companion for these deep dives.
 
 ---
 
 ## Summary & Lessons Learned
 
-Week 3 is complete, though not as planned. I installed Arch Linux on the business PC after a humbling journey through hardware failure (gaming PC tripped circuit breaker, suspected PSU/motherboard fault), encryption troubleshooting, UEFI quirks, and configuration errors. The K3s control plane deployment moves to Week 4.
+Week 3 is finally complete. I installed Arch Linux on the business PC after a humbling journey through hardware failure (gaming PC tripped circuit breaker, suspected PSU/motherboard fault), encryption troubleshooting, UEFI quirks, and configuration errors. The K3s control plane deployment moves to Week 4.
 
 **What worked well:**
 - **MSI `--removable` flag discovery:** Solved the initial boot failure
