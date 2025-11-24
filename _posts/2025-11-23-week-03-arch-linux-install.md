@@ -152,8 +152,6 @@ The system couldn't find the encrypted root partition.
 
 I went through the install again and followed the tutorial exactly and it still ended with a blank screen and then timeout error. I tried many things based on the forums and ended up in the same spot. I must have missed a key configuration somewhere.
 
-### The Realization
-
 After multiple rounds of:
 1. Boot from USB
 2. Unlock encrypted partition with `cryptsetup open`
