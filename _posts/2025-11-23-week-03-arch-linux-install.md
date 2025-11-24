@@ -1,6 +1,6 @@
 ---
 title: "Arch Linux Install: What Could Go Wrong?"
-date: 2025-11-23 00:00:00 -0500
+date: 2025-11-23 16:00:00
 categories: [Homelab, Linux]
 tags: [arch-linux, linux, homelab, troubleshooting, kubernetes]
 description: "Week 3 of 16: The humbling journey from encrypted Arch Linux installation failures to a working base system, and why the official wiki beats YouTube tutorials"
