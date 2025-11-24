@@ -1,6 +1,6 @@
 ---
 title: "What the heck are VLANs?"
-date: 2025-11-17 00:00:00 -0500
+date: 2025-11-17 16:00:00
 categories: [Homelab, Networking]
 tags: [vlans, networking, opnsense, cisco, homelab, security, firewall]
 description: "Week 2 of 16: Implementing VLAN segmentation with Cisco CBS220 switch and OPNsense to separate OT and IT networks for industrial security"

@@ -1,6 +1,6 @@
 ---
 title: "Laying the Foundation"
-date: 2025-11-10 00:00:00 -0500
+date: 2025-11-10 16:00:00
 categories: [Homelab, Networking]
 tags: [opnsense, networking, homelab, wifi, router, firewall]
 description: "Week 1 of 16: Configuring OPNsense router and Orbi mesh WiFi to establish the homelab foundation for Kubernetes and IIoT projects"
