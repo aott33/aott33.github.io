@@ -1,5 +1,5 @@
 ---
-title: "When Installation Guides Collide"
+title: "Arch Linux Install: What Could Go Wrong?"
 date: 2025-11-23 00:00:00 -0500
 categories: [Homelab, Linux]
 tags: [arch-linux, linux, homelab, troubleshooting, kubernetes]
