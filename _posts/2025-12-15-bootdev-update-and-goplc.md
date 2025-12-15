@@ -134,14 +134,14 @@ GoPLC is currently in the planning stage. I've completed the PRD, UX design spec
 **Boot.dev**
 - [Get Started for Free](https://www.boot.dev/)
 - [About Section](https://blog.boot.dev/about/)
-- [GitHub - Curriculum](https://github.com/bootdotdev/curriculum)
+- [GitHub Repository - Curriculum](https://github.com/bootdotdev/curriculum)
 
 **GoPLC**
 - [GitHub Repository](https://github.com/aott33/go-plc)
 
 **Tentacle PLC**
 - [Tentacle PLC Docs](https://joyautomation.com/software/packages/tentacle)
-- [Tentacle PLC GitHub Repo](https://github.com/joyautomation/tentacle)
+- [GitHub Repository](https://github.com/joyautomation/tentacle)
 
 **Writing Framework**
 - [The Algorithmic Framework for Writing Good Technical Articles](https://www.theocharis.dev/blog/algorithmic-framework-for-writing-technical-articles/)
