@@ -1,16 +1,16 @@
 ---
 title: "Kubernetes: A new frontier for me!"
-date: 2025-12-08 16:00:00
+date: 2025-12-22 16:00:00
 categories: [Homelab, Linux]
 tags: [arch-linux, linux, homelab, kubernetes]
-description: "Week 5 of 16: Learning Kubernetes and deploying a K3s control plane and worker"
+description: "Week 4 of 16: Learning Kubernetes and deploying a K3s control plane and worker"
 toc: true
 mermaid: true
 ---
 
 **See the [Homelab GitHub Repo](https://github.com/aott33/iiot-kubernetes-homelab)**
 
-**Week:** 5 of 16
+**Week:** 4 of 16
 
 ---
 

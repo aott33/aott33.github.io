@@ -18,9 +18,9 @@ Ignition Gold Certified developer with cross-industry SCADA experience and multi
 
 ### Technical Skills
 
-**Platforms & Languages:** Ignition SCADA (Gold Certified), Python, JavaScript, TypeScript, SQL (PostgreSQL, MySQL, MS SQL), Studio 5000, TIA Portal, CODESYS
+**Platforms & Languages:** Ignition SCADA (Gold Certified), Python, Golang, JavaScript, TypeScript, SQL (PostgreSQL, MySQL, MS SQL), Studio 5000, TIA Portal, CODESYS
 
-**Tools & Protocols:** Docker, MQTT, REST APIs, Git, SolidWorks
+**Tools & Protocols:** Docker, MQTT/SpB, REST APIs, Git, SolidWorks, OnShape
 
 **Operating Systems:** Linux, Windows
 
