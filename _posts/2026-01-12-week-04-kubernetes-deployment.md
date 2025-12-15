@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes: A new frontier for me!"
-date: 2025-12-22 16:00:00
+date: 2026-01-12 16:00:00
 categories: [Homelab, Linux]
 tags: [arch-linux, linux, homelab, kubernetes]
 description: "Week 4 of 16: Learning Kubernetes and deploying a K3s control plane and worker"
