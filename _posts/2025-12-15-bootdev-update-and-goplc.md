@@ -12,7 +12,7 @@ Most coding platforms promise to teach you programming but leave you stuck in tu
 This post covers three things: 
 
 1. Why Boot.dev's approach to teaching code works
-2. here I am in the program
+2. Where I am in the program
 3. What I'm building for my capstone project
 
 ## The Problem with Learning to Code Online
