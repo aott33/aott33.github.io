@@ -9,7 +9,11 @@ toc: true
 
 Most coding platforms promise to teach you programming but leave you stuck in tutorial hell. Boot.dev actually got me building real projects. Now I'm taking everything I learned and applying it to a capstone that solves a real problem I've faced in my career.
 
-This post covers three things: why Boot.dev's approach to teaching code works, where I am in the program, and what I'm building for my capstone project.
+This post covers three things: 
+
+1. Why Boot.dev's approach to teaching code works
+2. here I am in the program
+3. What I'm building for my capstone project
 
 ## The Problem with Learning to Code Online
 
