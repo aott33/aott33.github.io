@@ -12,7 +12,7 @@ order: 1
 
 ### Professional Summary
 
-Ignition Gold Certified developer with cross-industry SCADA experience and multi-platform PLC experience (Allen-Bradley, Siemens, CODESYS). Design and implement Ignition SCADA solutions tailored to customer requirements.
+Ignition Gold Certified developer with cross-industry experience in SCADA and multi-platform PLC systems (Allen-Bradley, Siemens, CODESYS). Focused on scalable solutions that bridge OT and IT, including UNS concepts, historian integration, and real-time analytics.
 
 ---
 
@@ -20,7 +20,9 @@ Ignition Gold Certified developer with cross-industry SCADA experience and multi
 
 **Platforms & Languages:** Ignition SCADA (Gold Certified), Python, Golang, JavaScript, TypeScript, SQL (PostgreSQL, MySQL, MS SQL), Studio 5000, TIA Portal, CODESYS
 
-**Tools & Protocols:** Docker, MQTT/SpB, REST APIs, Git, SolidWorks, OnShape
+**Standards familiar with:** ISA-101, ISA-95, ISA-88
+
+**Protocols & Tools:** OPC UA, MQTT, REST, Docker, Git, SolidWorks, OnShape
 
 **Operating Systems:** Linux, Windows
 
@@ -35,7 +37,7 @@ Ignition Gold Certified developer with cross-industry SCADA experience and multi
 
 - Architect SCADA solution for 65 edge gateways across central tank batteries and saltwater disposal facilities
 - Optimized alarm management system, reducing load time from 30 seconds to instant response
-- Design scalable UDT structures for data aggregation and analytics using Ignition Perspective and Python
+- Designed scalable UDT structures and data models for aggregation, contextualization, and analytics across distributed assets
 
 #### AO Automation Ltd, Chilliwack, BC
 **Founder & Lead SCADA Developer** | *July 2022 – July 2025*
@@ -87,7 +89,7 @@ Ignition Gold Certified developer with cross-industry SCADA experience and multi
 #### Boot.dev
 **Certificate: Back-end Developer Pathway (In Progress)** | *December 2023 – Present*
 
-- Python, JavaScript, Go
+- Python, Go
 - Docker, CI/CD, Kubernetes
 
 #### 4.0 Solutions
