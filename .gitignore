@@ -11,8 +11,5 @@ Gemfile.lock
 .jekyll-metadata
 vendor
 
-# Images - to be added via github
-assets/img/posts
-
 # Backup files
 *.backup
