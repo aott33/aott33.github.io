@@ -1,6 +1,6 @@
 ---
 title: "Boot.dev: A great backend coding platform"
-date: 2025-12-15 16:00:00
+date: 2025-12-16 16:00:00
 categories: [Backend, Learning]
 tags: [python, golang, sql, devops]
 description: "A brief update on my Boot.dev progress and introduction to my capstone project."
@@ -14,7 +14,6 @@ As you may have noticed, I have not been posting about my homelab for the last f
 
 ## Background & Context
 
-This is week 3 of a 16-week journey documenting my Homelab building process. Week 1 established the network foundation with OPNsense and WiFi. Week 2 added VLAN segmentation for OT/IT security. This week was meant to deploy the Kubernetes control plane on my gaming PC, but hardware had other plans.
 
 **This post's goals:**
 1. Walk through why Boot.dev is a great coding platform
