@@ -5,9 +5,6 @@ categories: [Backend, Learning]
 tags: [golang, bootdev, plc, industrial-automation]
 description: "I hit Archmage on Boot.dev. Here's why the platform works and what I'm building for my capstone project."
 toc: true
-image:
-  path: /assets/img/posts/go-plc/bootdev-achievements.jpg
-  alt: Boot.dev Archmage Achievement
 ---
 
 Most coding platforms promise to teach you programming but leave you stuck in tutorial hell. Boot.dev actually got me building real projects. Now I'm taking everything I learned and applying it to a capstone that solves a real problem I've faced in my career.
@@ -51,7 +48,7 @@ Sounds gimmicky, but it works. The gamification creates genuine motivation to ke
 
 I hit Archmage this week. Here's where I stand:
 
-![Boot.dev Archmage Achievement](/assets/img/posts/go-plc/bootdev-achievements.jpg)
+![bootdev-achievements](https://github.com/user-attachments/assets/3c54a350-1e4c-4fcf-8a28-89cc6f5f0def)
 _Level 100 Archmage - 1,464 lessons completed across 20 courses_
 
 I have three more courses and the capstone project remaining. My estimate is completion by end of January.
@@ -97,12 +94,14 @@ GoPLC communicates with industrial devices via standard protocols and exposes da
 
 Here are the initial mockups for the monitoring interface:
 
-![GoPLC Overview Dashboard](/assets/img/posts/go-plc/ux-overview.png)
+<img alt="ux-overview" src="https://github.com/user-attachments/assets/0eb6b3b6-ed02-4c3f-b668-a01ae0b6646b" />
+<img alt="ux-compact" src="https://github.com/user-attachments/assets/5f085881-8d82-4e0d-8fcf-11671883bb62" />
 _Main dashboard showing sources, tasks, system health, and variable values_
 
 The interface is designed for operators who need to quickly assess system status. The alert bar at the top shows active errors and warnings. Sources and tasks display real-time connection and execution status.
 
-![GoPLC Alerts Expanded](/assets/img/posts/go-plc/ux-alerts-expanded.png)
+<img alt="ux-alerts-expanded" src="https://github.com/user-attachments/assets/16552658-80ff-49ac-b4d1-f400dc25373c" />
+<img alt="ux-alerts-compact" src="https://github.com/user-attachments/assets/decc1873-71ce-4b54-b40c-c0d827ac25f6" />
 _Alert system showing connection errors and value warnings with timestamps_
 
 Error messages are human-readable. No cryptic codes or hex values. When something fails, you can see exactly what happened and when.
